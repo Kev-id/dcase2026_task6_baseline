@@ -156,7 +156,7 @@ def main(opt, resume=None):
 
     train_dataset = StartEndDataset(**dataset_config)    
     copied_eval_config = copy.deepcopy(dataset_config)
-    copied_eval_config.data_path = opt.eval_path
+    copied_eval_config.data_path = opt.val_path
     eval_dataset = StartEndDataset(**copied_eval_config)
     
     # prepare model
