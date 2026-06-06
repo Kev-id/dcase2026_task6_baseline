@@ -11,6 +11,7 @@ from misc import accuracy
 
 
 def inverse_sigmoid(x, eps=1e-3):
+    #这个函数负责计算输入张量的逆sigmoid值。作用是将sigmoid函数的输出值转换回原始输入值。它首先将输入张量的值限制在0和1之间，然后计算逆sigmoid值并返回结果。
     x = x.clamp(min=0, max=1)
     x1 = x.clamp(min=eps)
     x2 = (1 - x).clamp(min=eps)
@@ -18,6 +19,7 @@ def inverse_sigmoid(x, eps=1e-3):
 
 
 class QDDETR(nn.Module):
+    #这个类定义了QD-DETR模型。它继承自nn.Module，并在初始化方法中接受多个参数来配置模型的结构和行为。模型包含一个变压器模块、位置编码模块、文本位置编码模块、多个线性层用于输入投影，以及一个多层感知机用于预测时间跨度和类别。前向方法接受文本和音频输入，并通过变压器进行处理，最终输出预测的时间跨度和类别，以及一些辅助信息用于损失计算。
     def __init__(
         self,
         transformer,
@@ -67,16 +69,18 @@ class QDDETR(nn.Module):
         relu_args[n_input_proj-1] = False
 
         self.input_txt_proj = nn.Sequential(*[
+            #这些线性层用于将文本输入投影到隐藏维度空间。它们可以配置为使用层归一化、dropout和ReLU激活函数。根据n_input_proj参数的值，可能会使用不同数量的线性层进行投影。
             LinearLayer(txt_dim, hidden_dim, layer_norm=True, dropout=input_dropout, relu=relu_args[0]),
             LinearLayer(hidden_dim, hidden_dim, layer_norm=True, dropout=input_dropout, relu=relu_args[1]),
             LinearLayer(hidden_dim, hidden_dim, layer_norm=True, dropout=input_dropout, relu=relu_args[2])
         ][:n_input_proj])
         self.input_aud_proj = nn.Sequential(*[
+            #这些线性层用于将音频输入投影到隐藏维度空间。它们可以配置为使用层归一化、dropout和ReLU激活函数。根据n_input_proj参数的值，可能会使用不同数量的线性层进行投影。此外，第一个线性层还将位置嵌入添加到音频输入中，以提供位置信息。
             LinearLayer(aud_dim + 2, hidden_dim, layer_norm=True, dropout=input_dropout, relu=relu_args[0]), # add pos_embedding
             LinearLayer(hidden_dim, hidden_dim, layer_norm=True, dropout=input_dropout, relu=relu_args[1]),
             LinearLayer(hidden_dim, hidden_dim, layer_norm=True, dropout=input_dropout, relu=relu_args[2])
         ][:n_input_proj])
-        self.aux_loss = aux_loss
+        self.aux_loss = aux_loss#这个布尔参数指示是否使用辅助解码损失。如果为True，模型将在每个解码器层的输出上计算损失，而不仅仅是在最后一层。这可以帮助模型在训练过程中更好地学习，并可能提高性能。
 
         self.saliency_proj1 = nn.Linear(hidden_dim, hidden_dim)
         self.saliency_proj2 = nn.Linear(hidden_dim, hidden_dim)
@@ -103,9 +107,9 @@ class QDDETR(nn.Module):
                - "aux_outputs": Optional, only returned when auxilary losses are activated. It is a list of
                                 dictionnaries containing the two above keys for each decoder layer.
         """
-        src_aud = self.input_aud_proj(src_aud)
-        src_txt = self.input_txt_proj(src_txt)
-        src = torch.cat([src_aud, src_txt], dim=1)  # (bsz, L_aud+L_txt, d)
+        src_aud = self.input_aud_proj(src_aud)#这些线性层用于将音频输入投影到隐藏维度空间。
+        src_txt = self.input_txt_proj(src_txt)#这些线性层用于将文本输入投影到隐藏维度空间。
+        src = torch.cat([src_aud, src_txt], dim=1)  # (bsz, L_aud+L_txt, d)。为什么要cat？因为变压器的输入是一个序列，所以我们需要将音频和文本输入连接在一起形成一个长序列。
         mask = torch.cat([src_aud_mask, src_txt_mask], dim=1).bool()  # (bsz, L_aud+L_txt)
         pos_aud = self.position_embed(src_aud, src_aud_mask)  # (bsz, L_aud, d)
         pos_txt = self.txt_position_embed(src_txt) if self.use_txt_pos else torch.zeros_like(src_txt)  # (bsz, L_txt, d)
@@ -115,6 +119,8 @@ class QDDETR(nn.Module):
         # (#layers, bsz, #queries, d), (bsz, L_aud+L_txt, d)
 
         # for global token
+        #这段代码负责为变压器输入添加一个全局表示的token。作用是提供一个全局的上下文表示，帮助模型更好地理解整个输入序列。首先，它创建一个与输入序列长度相同的掩码，并将全局表示token的掩码设置为True。然后，它将全局表示token添加到输入序列的开头，并将相应的位置编码添加到位置编码中。最后，它将更新后的输入序列、掩码和位置编码传递给变压器进行处理。
+        #这个token之后用于从变压器的输出中提取全局表示，并与音频片段的表示进行交互，以计算saliency分数和对比损失。
         mask_ = torch.tensor([[True]]).to(mask.device).repeat(mask.shape[0], 1)
         mask = torch.cat([mask_, mask], dim=1)
         src_ = self.global_rep_token.reshape([1, 1, self.hidden_dim]).repeat(src.shape[0], 1, 1)
@@ -125,18 +131,20 @@ class QDDETR(nn.Module):
         audio_length = src_aud.shape[1]
         
         hs, reference, memory, memory_global = self.transformer(src, ~mask, self.query_embed.weight, pos, audio_length)
-        outputs_class = self.class_embed(hs)  # (#layers, batch_size, #queries, #classes)
+        #变压器的输出包括解码器的隐藏状态hs、参考点reference、变压器编码器的输出memory以及全局表示memory_global。hs的形状为(#layers, batch_size, #queries, hidden_dim)，reference的形状为(batch_size, #queries, 2)，memory的形状为(batch_size, L_aud+L_txt+1, hidden_dim)，memory_global的形状为(batch_size, hidden_dim)。这些输出将用于后续的预测和损失计算。
+        outputs_class = self.class_embed(hs)  # (#layers, batch_size, #queries, #classes)#这个线性层用于将解码器的隐藏状态hs映射到类别预测空间。它接受形状为(#layers, batch_size, #queries, hidden_dim)的输入，并输出形状为(#layers, batch_size, #queries, 2)的张量，表示每个查询的类别预测（背景或前景）。输出中的最后一个维度大小为2，因为我们有两个类别：背景和前景。
         reference_before_sigmoid = inverse_sigmoid(reference)
-        tmp = self.span_embed(hs)
-        outputs_coord = tmp + reference_before_sigmoid
-        if self.span_loss_type == "l1":
+        tmp = self.span_embed(hs)#这个多层感知机用于预测时间跨度。它接受解码器的隐藏状态hs作为输入，并输出一个形状为(#layers, batch_size, #queries, 2)的张量，表示每个查询的预测时间跨度（中心位置和宽度）。根据span_loss_type参数的值，输出可能会经过sigmoid函数进行归一化，以确保预测值在0和1之间。
+        outputs_coord = tmp + reference_before_sigmoid#这个操作将多层感知机的输出与参考点进行相加，以获得最终的预测时间跨度。参考点是变压器解码器中每个查询的初始位置估计，通过添加多层感知机的输出，模型可以调整这个位置以更准确地预测事件的时间跨度。如果span_loss_type是l1，那么输出将经过sigmoid函数进行归一化，以确保预测值在0和1之间，表示相对于输入序列长度的比例。
+        if self.span_loss_type == "l1":#如果span_loss_type参数的值是"l1"，则表示使用L1损失来计算时间跨度的损失。在这种情况下，输出将经过sigmoid函数进行归一化，以确保预测值在0和1之间，表示相对于输入序列长度的比例。这是因为L1损失通常用于回归任务，而时间跨度的预测需要在一个连续的范围内进行，因此需要将输出限制在合理的范围内。
             outputs_coord = outputs_coord.sigmoid()
-        out = {'pred_logits': outputs_class[-1], 'pred_spans': outputs_coord[-1]}
-
+        out = {'pred_logits': outputs_class[-1], 'pred_spans': outputs_coord[-1]}#一个是类别预测，另一个是时间跨度预测。outputs_class[-1]表示使用最后一层解码器的输出进行类别预测，而outputs_coord[-1]表示使用最后一层解码器的输出进行时间跨度预测。这些预测将用于计算损失和生成最终的提交结果。
+        #下面的代码负责从变压器编码器的输出中提取文本和音频的表示，并计算saliency分数和对比损失。首先，它将变压器编码器的输出memory分割为文本表示txt_mem和音频表示aud_mem。然后，它构建负样本对，通过将文本输入进行循环移位来创建负样本，并将其与音频输入连接在一起形成负样本输入。接下来，它将正样本输入和负样本输入分别传递给变压器，得到对应的编码器输出memory_global和memory_global_neg。最后，它使用这些输出计算saliency分数和对比损失，并将它们添加到输出字典中。
         txt_mem = memory[:, src_aud.shape[1]:]  # (bsz, L_txt, d)
         aud_mem = memory[:, :src_aud.shape[1]]  # (bsz, L_aud, d)
             
         ### Neg Pairs ###
+        #通过将文本输入进行循环移位来创建负样本，并将其与音频输入连接在一起形成负样本输入。这种方法可以生成与正样本不同的文本输入，从而帮助模型学习区分正负样本，提高模型的鲁棒性和泛化能力。
         src_txt_neg = torch.cat([src_txt[1:], src_txt[0:1]], dim=0)
         src_txt_mask_neg = torch.cat([src_txt_mask[1:], src_txt_mask[0:1]], dim=0)
         src_neg = torch.cat([src_aud, src_txt_neg], dim=1)

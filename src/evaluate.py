@@ -36,6 +36,7 @@ logging.basicConfig(format="%(asctime)s.%(msecs)03d:%(levelname)s:%(name)s - %(m
 
 
 def eval_epoch_post_processing(submission, opt, gt_data, save_submission_filename):
+    #这个函数负责在评估阶段进行后处理。它首先将提交结果保存为JSONL文件，然后根据评估分割的名称（val或test）决定是否进行评估。如果是val或test分割，它调用eval_submission函数来评估提交结果，并将评估指标保存为JSON文件。最后，它返回评估指标和最新的文件路径列表。
     logger.info("Saving/Evaluating before nms results")
     submission_path = os.path.join(opt.results_dir, save_submission_filename)
     save_jsonl(submission, submission_path)
@@ -54,6 +55,7 @@ def eval_epoch_post_processing(submission, opt, gt_data, save_submission_filenam
 
 @torch.no_grad()
 def compute_mr_results(model, eval_loader, opt, criterion=None):
+    #这个函数负责计算模型在评估数据上的结果。它首先根据模型名称选择适当的批处理输入函数，然后初始化一个字典来存储损失的平均值。接下来，它遍历评估数据加载器中的每个批次，获取查询元数据、模型输入和目标，并将输入传递给模型以获得输出。然后，它从输出中提取预测的时间跨度和概率，并根据概率对预测进行排序。最后，它使用PostProcessorDETR对结果进行后处理，并返回最终的结果和损失平均值。
     batch_input_fn = cg_detr_prepare_batch_inputs if opt.model_name == 'cg_detr' else prepare_batch_inputs
     loss_meters = defaultdict(AverageMeter)
 
@@ -102,12 +104,14 @@ def compute_mr_results(model, eval_loader, opt, criterion=None):
 
 
 def get_eval_res(model, eval_loader, opt, criterion):
+    #这个函数负责获取评估结果。它调用compute_mr_results函数来计算模型在评估数据上的结果和损失平均值，并返回这些结果。
     """compute and save query and video proposal embeddings"""
     eval_res, eval_loss_meters = compute_mr_results(model, eval_loader, opt, criterion)
     return eval_res, eval_loss_meters
 
 
 def eval_epoch(model, eval_dataset, opt, save_submission_filename, criterion):
+    #这个函数负责在评估阶段执行一个评估周期。它首先设置模型为评估模式，并创建一个数据加载器来加载评估数据集。然后，它调用get_eval_res函数来获取评估结果和损失平均值。接下来，它调用eval_epoch_post_processing函数来对结果进行后处理，并返回评估指标、损失平均值和最新的文件路径列表。
     logger.info("Generate submissions")
     model.eval()
     criterion.eval()
@@ -127,6 +131,7 @@ def eval_epoch(model, eval_dataset, opt, save_submission_filename, criterion):
 
 
 def setup_model(opt):
+    #这个函数负责设置模型、优化器和学习率调度器，并在需要时加载检查点。它首先调用build_model_qd_detr函数来构建模型和损失函数，然后将它们移动到指定的设备（如果是CUDA）。接下来，它创建一个AdamW优化器，使用模型中所有需要梯度更新的参数，并设置学习率和权重衰减。最后，它创建一个StepLR学习率调度器，根据指定的学习率下降步数来调整学习率。函数返回模型、损失函数、优化器和学习率调度器。
     """setup model/optimizer/scheduler and load checkpoints when needed"""
     logger.info("setup model/optimizer/scheduler")
     model, criterion = build_model_qd_detr(opt)
@@ -144,6 +149,7 @@ def setup_model(opt):
 
 
 def start_inference(opt):
+    #这个函数负责开始推理过程。它首先记录一条日志，表示正在设置配置、数据和模型。然后，它根据评估分割的名称（val或test）设置数据集配置，并创建一个StartEndDataset对象来加载评估数据集。接下来，它调用setup_model函数来设置模型、损失函数、优化器和学习率调度器，并加载指定的模型检查点。最后，它记录一条日志，表示开始推理，并调用eval_epoch函数来执行评估周期，并记录评估指标。
     logger.info("Setup config, data and model...")
 
     # dataset & data loader
@@ -182,10 +188,10 @@ if __name__ == '__main__':
     parser.add_argument('--config', '-c', type=str, required=True, help='config path')
     parser.add_argument('--model_path', '-m', type=str, required=True, help='model checkpoint path')
     parser.add_argument('--split', '-s', type=str, default='val', choices=['val', 'test'], help='split name: val or test')
-    args = parser.parse_args()
-    option_manager = BaseOptions(args.config)
+    args = parser.parse_args()#这里使用argparse库来解析命令行参数，要求用户提供一个配置文件路径（--config）和一个模型检查点路径（--model_path）。用户还可以选择评估的分割（--split），默认为'val'，也可以选择'test'。
+    option_manager = BaseOptions(args.config)#这行创建了一个BaseOptions对象，传入用户提供的配置文件路径。BaseOptions类负责读取和解析配置文件中的参数，并将其存储在一个属性中。
     option_manager.parse()
-    opt = option_manager.option
+    opt = option_manager.option#这行调用了option_manager的parse方法，解析配置文件中的参数，并将结果存储在opt属性中。opt现在包含了从配置文件中读取的所有参数，可以通过opt.attribute_name来访问这些参数。
 
     opt.model_path = args.model_path
     opt.eval_split_name = args.split
