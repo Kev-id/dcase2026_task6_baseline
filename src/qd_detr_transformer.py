@@ -59,6 +59,7 @@ class Transformer(nn.Module):
                  bbox_embed_diff_each_layer=False,
                  max_audio_len=75,
                  use_topology_bias=False,
+                 use_highlight_gate=False,
                  ):
         super().__init__()
 
@@ -72,7 +73,8 @@ class Transformer(nn.Module):
         encoder_layer = TransformerEncoderLayer(d_model, nhead, dim_feedforward,
                                                 dropout, activation, normalize_before,
                                                 max_audio_len=max_audio_len,
-                                                use_topology_bias=use_topology_bias)
+                                                use_topology_bias=use_topology_bias,
+                                                use_highlight_gate=use_highlight_gate)
         encoder_norm = nn.LayerNorm(d_model) if normalize_before else None
         self.encoder = TransformerEncoder(encoder_layer, num_encoder_layers, encoder_norm)
 
@@ -467,9 +469,11 @@ class TransformerEncoderLayer(nn.Module):
 
     def __init__(self, d_model, nhead, dim_feedforward=2048, dropout=0.1,
                  activation="relu", normalize_before=False,
-                 max_audio_len=75, use_topology_bias=False):
+                 max_audio_len=75, use_topology_bias=False,
+                 use_highlight_gate=False):
         super().__init__()
         self.self_attn = nn.MultiheadAttention(d_model, nhead, dropout=dropout)
+        self.nhead = nhead
         # Implementation of Feedforward model
         self.linear1 = nn.Linear(d_model, dim_feedforward)
         self.dropout = nn.Dropout(dropout)
@@ -486,30 +490,48 @@ class TransformerEncoderLayer(nn.Module):
         if use_topology_bias:
             self.temporal_topology_bias = nn.Parameter(torch.zeros(max_audio_len, max_audio_len))
             self.temporal_topology_scale = nn.Parameter(torch.ones(1))
+        self.use_highlight_gate = use_highlight_gate
+        if use_highlight_gate:
+            self.highlight_gate = nn.Linear(d_model, max_audio_len)
+            self.highlight_gate_scale = nn.Parameter(torch.ones(1))
 
     def with_pos_embed(self, tensor, pos: Optional[Tensor]):
         return tensor if pos is None else tensor + pos
 
-    def build_topology_attn_mask(self, src, src_mask: Optional[Tensor] = None):
-        if not self.use_topology_bias:
+    def build_audio_attn_mask(self, src, src_mask: Optional[Tensor] = None):
+        if not self.use_topology_bias and not self.use_highlight_gate:
             return src_mask
 
-        seq_len = src.shape[0]
+        seq_len, batch_size = src.shape[:2]
         local_len = seq_len - 1
         if local_len <= 0:
             return src_mask
 
-        topology_bias = src.new_zeros(seq_len, seq_len)
-        topology_bias[1:, 1:] = self.temporal_topology_bias[:local_len, :local_len]
-        topology_bias = topology_bias * self.temporal_topology_scale
+        attn_bias = src.new_zeros(seq_len, seq_len)
+        if self.use_topology_bias:
+            attn_bias[1:, 1:] = self.temporal_topology_bias[:local_len, :local_len]
+            attn_bias = attn_bias * self.temporal_topology_scale
+
+        if self.use_highlight_gate:
+            highlight_scores = torch.sigmoid(self.highlight_gate(src[0]))[:, :local_len]
+            highlight_affinity = torch.einsum("bi,bj->bij", highlight_scores, highlight_scores)
+            highlight_bias = src.new_zeros(batch_size, seq_len, seq_len)
+            highlight_bias[:, 1:, 1:] = highlight_affinity * self.highlight_gate_scale
+            attn_bias = attn_bias.unsqueeze(0) + highlight_bias
 
         if src_mask is None:
-            return topology_bias
+            if attn_bias.dim() == 3:
+                return attn_bias.repeat_interleave(self.nhead, dim=0)
+            return attn_bias
         if src_mask.dtype == torch.bool:
             float_mask = torch.zeros_like(src_mask, dtype=src.dtype)
             float_mask = float_mask.masked_fill(src_mask, float("-inf"))
-            return float_mask + topology_bias
-        return src_mask + topology_bias
+            src_mask = float_mask
+        if attn_bias.dim() == 3:
+            if src_mask.dim() == 2:
+                src_mask = src_mask.unsqueeze(0)
+            return (src_mask + attn_bias).repeat_interleave(self.nhead, dim=0)
+        return src_mask + attn_bias
 
     def forward_post(self,
                      src,
@@ -517,7 +539,7 @@ class TransformerEncoderLayer(nn.Module):
                      src_key_padding_mask: Optional[Tensor] = None,
                      pos: Optional[Tensor] = None):
         q = k = self.with_pos_embed(src, pos)
-        attn_mask = self.build_topology_attn_mask(src, src_mask)
+        attn_mask = self.build_audio_attn_mask(src, src_mask)
         src2 = self.self_attn(q, k, value=src, attn_mask=attn_mask,
                               key_padding_mask=src_key_padding_mask)[0]
         src = src + self.dropout1(src2)
@@ -533,7 +555,7 @@ class TransformerEncoderLayer(nn.Module):
                     pos: Optional[Tensor] = None):
         src2 = self.norm1(src)
         q = k = self.with_pos_embed(src2, pos)
-        attn_mask = self.build_topology_attn_mask(src2, src_mask)
+        attn_mask = self.build_audio_attn_mask(src2, src_mask)
         src2 = self.self_attn(q, k, value=src2, attn_mask=attn_mask,
                               key_padding_mask=src_key_padding_mask)[0]
         src = src + self.dropout1(src2)
@@ -781,6 +803,7 @@ def build_transformer(args):
         activation='prelu',
         max_audio_len=args.max_a_l,
         use_topology_bias=getattr(args, "use_topology_bias", False),
+        use_highlight_gate=getattr(args, "use_highlight_gate", False),
     )
 
 
