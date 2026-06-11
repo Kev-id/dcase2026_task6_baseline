@@ -57,6 +57,8 @@ class Transformer(nn.Module):
                  num_patterns=0,
                  modulate_t_attn=True,
                  bbox_embed_diff_each_layer=False,
+                 max_audio_len=75,
+                 use_topology_bias=False,
                  ):
         super().__init__()
 
@@ -68,7 +70,9 @@ class Transformer(nn.Module):
 
         # TransformerEncoderLayerThin
         encoder_layer = TransformerEncoderLayer(d_model, nhead, dim_feedforward,
-                                                dropout, activation, normalize_before)
+                                                dropout, activation, normalize_before,
+                                                max_audio_len=max_audio_len,
+                                                use_topology_bias=use_topology_bias)
         encoder_norm = nn.LayerNorm(d_model) if normalize_before else None
         self.encoder = TransformerEncoder(encoder_layer, num_encoder_layers, encoder_norm)
 
@@ -462,7 +466,8 @@ class T2V_TransformerEncoderLayer(nn.Module):
 class TransformerEncoderLayer(nn.Module):
 
     def __init__(self, d_model, nhead, dim_feedforward=2048, dropout=0.1,
-                 activation="relu", normalize_before=False):
+                 activation="relu", normalize_before=False,
+                 max_audio_len=75, use_topology_bias=False):
         super().__init__()
         self.self_attn = nn.MultiheadAttention(d_model, nhead, dropout=dropout)
         # Implementation of Feedforward model
@@ -477,9 +482,34 @@ class TransformerEncoderLayer(nn.Module):
 
         self.activation = _get_activation_fn(activation)
         self.normalize_before = normalize_before
+        self.use_topology_bias = use_topology_bias
+        if use_topology_bias:
+            self.temporal_topology_bias = nn.Parameter(torch.zeros(max_audio_len, max_audio_len))
+            self.temporal_topology_scale = nn.Parameter(torch.ones(1))
 
     def with_pos_embed(self, tensor, pos: Optional[Tensor]):
         return tensor if pos is None else tensor + pos
+
+    def build_topology_attn_mask(self, src, src_mask: Optional[Tensor] = None):
+        if not self.use_topology_bias:
+            return src_mask
+
+        seq_len = src.shape[0]
+        local_len = seq_len - 1
+        if local_len <= 0:
+            return src_mask
+
+        topology_bias = src.new_zeros(seq_len, seq_len)
+        topology_bias[1:, 1:] = self.temporal_topology_bias[:local_len, :local_len]
+        topology_bias = topology_bias * self.temporal_topology_scale
+
+        if src_mask is None:
+            return topology_bias
+        if src_mask.dtype == torch.bool:
+            float_mask = torch.zeros_like(src_mask, dtype=src.dtype)
+            float_mask = float_mask.masked_fill(src_mask, float("-inf"))
+            return float_mask + topology_bias
+        return src_mask + topology_bias
 
     def forward_post(self,
                      src,
@@ -487,7 +517,8 @@ class TransformerEncoderLayer(nn.Module):
                      src_key_padding_mask: Optional[Tensor] = None,
                      pos: Optional[Tensor] = None):
         q = k = self.with_pos_embed(src, pos)
-        src2 = self.self_attn(q, k, value=src, attn_mask=src_mask,
+        attn_mask = self.build_topology_attn_mask(src, src_mask)
+        src2 = self.self_attn(q, k, value=src, attn_mask=attn_mask,
                               key_padding_mask=src_key_padding_mask)[0]
         src = src + self.dropout1(src2)
         src = self.norm1(src)
@@ -502,7 +533,8 @@ class TransformerEncoderLayer(nn.Module):
                     pos: Optional[Tensor] = None):
         src2 = self.norm1(src)
         q = k = self.with_pos_embed(src2, pos)
-        src2 = self.self_attn(q, k, value=src2, attn_mask=src_mask,
+        attn_mask = self.build_topology_attn_mask(src2, src_mask)
+        src2 = self.self_attn(q, k, value=src2, attn_mask=attn_mask,
                               key_padding_mask=src_key_padding_mask)[0]
         src = src + self.dropout1(src2)
         src2 = self.norm2(src)
@@ -747,6 +779,8 @@ def build_transformer(args):
         normalize_before=False,
         return_intermediate_dec=True,
         activation='prelu',
+        max_audio_len=args.max_a_l,
+        use_topology_bias=getattr(args, "use_topology_bias", False),
     )
 
 
