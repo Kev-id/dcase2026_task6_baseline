@@ -23,6 +23,8 @@ input_dropout: 0.5
 dropout: 0.1
 nheads: 8
 num_queries: 10
+use_topology_bias: True
+use_highlight_gate: True
 
 n_input_proj: 2
 saliency_margin: 0.2
