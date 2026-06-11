@@ -167,8 +167,14 @@ def main(opt, resume=None):
 
     if resume is not None:
         checkpoint = torch.load(resume, weights_only=False)
-        model.load_state_dict(checkpoint["model"])
-        logger.info("Loaded model checkpoint: {}".format(resume))
+        incompatible_keys = model.load_state_dict(checkpoint["model"], strict=False)
+        if incompatible_keys.missing_keys:
+            logger.info("Missing checkpoint keys initialized from scratch: {}".format(
+                incompatible_keys.missing_keys))
+        if incompatible_keys.unexpected_keys:
+            logger.info("Unexpected checkpoint keys ignored: {}".format(
+                incompatible_keys.unexpected_keys))
+        logger.info("Loaded compatible model weights from checkpoint: {}".format(resume))
 
     logger.info("Start Training...")
     
