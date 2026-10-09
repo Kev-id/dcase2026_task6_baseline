@@ -1,6 +1,9 @@
 # dcase2026_task6_baseline
 [QD-DETR](https://github.com/wjun0830/QD-DETR)-based baseline for DCASE 2026 challenge task 6.
 
+For the reproducible Huawei Cloud ModelArts setup used in this project, see
+[docs/modelarts_setup.md](docs/modelarts_setup.md).
+
 ## Model architecture
 The model is based on QD-DETR, a Transformer-based encoder-decoder architecture. An overview architecture is described in Figure 2 in the [paper](https://arxiv.org/pdf/2303.13874).
 Given an audio and text pair, [CLAP](https://github.com/microsoft/CLAP) encodes them into audio and text features, respectively.
