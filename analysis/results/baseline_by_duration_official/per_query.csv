@@ -1,0 +1,510 @@
+﻿duration_bin,qid,query,eligible_gt_windows,matched_gt_start,matched_gt_end,matched_gt_width,pred_start,pred_end,pred_width,top1_score,top1_iou,start_error,end_error,width_error,abs_width_error,width_ratio,center_error,abs_center_error
+<5 s,rwT__ERCUno_1,Metal tools clanging together,2,52.0,56.0,4.0,69.0,77.0,8.0,0.8987,0.0,17.0,21.0,4.0,4.0,2.0,19.0,19.0
+<5 s,rwtmaKiCcQU_1,Engines are running and something is being sprayed,2,25.0,28.0,3.0,2.0,7.0,5.0,0.9675,0.0,-23.0,-21.0,2.0,2.0,1.6666666666666667,-22.0,22.0
+<5 s,s3cT_DAj31g_1,A man is talking and lighting a stove,1,21.0,23.0,2.0,5.0,15.0,10.0,0.9208,0.0,-16.0,-8.0,8.0,8.0,5.0,-12.0,12.0
+<5 s,s3cT_DAj31g_2,Something is boiling,1,32.0,36.0,4.0,15.0,105.0,90.0,0.9209,0.044444444444444446,-17.0,69.0,86.0,86.0,22.5,26.0,26.0
+<5 s,s4Uz1Ffgo04_1,A siren goes off and the sound of a car driving,1,156.0,160.0,4.0,0.0,11.0,11.0,0.9723,0.0,-156.0,-149.0,7.0,7.0,2.75,-152.5,152.5
+<5 s,s4Uz1Ffgo04_2,A horn honks and a car is driving,1,189.0,191.0,2.0,156.0,164.0,8.0,0.9526,0.0,-33.0,-27.0,6.0,6.0,4.0,-30.0,30.0
+<5 s,sEprKHm8Sj8_2,"With engine noise rumbling, the wind blows, people are talking, and someone is laughing",1,221.0,225.0,4.0,199.0,220.0,21.0,0.9516,0.0,-22.0,-5.0,17.0,17.0,5.25,-13.5,13.5
+<5 s,sIXTftIuUgw_1,A balloon deflates,1,33.0,35.0,2.0,60.0,65.0,5.0,0.8672,0.0,27.0,30.0,3.0,3.0,2.5,28.5,28.5
+<5 s,sIXTftIuUgw_2,A pop and screaming,1,81.0,85.0,4.0,82.0,99.0,17.0,0.9545,0.16666666666666666,1.0,14.0,13.0,13.0,4.25,7.5,7.5
+<5 s,sLkeqCDJIyw_1,Someone is snoring and something is falling,1,0.0,1.0,1.0,108.0,116.0,8.0,0.9535,0.0,108.0,115.0,7.0,7.0,8.0,111.5,111.5
+<5 s,sSMl2vc3e_k_1,A man is talking,1,66.0,68.0,2.0,28.0,33.0,5.0,0.9679,0.0,-38.0,-35.0,3.0,3.0,2.5,-36.5,36.5
+<5 s,sZuuj08Gr_I_1,A woman is talking while mixing something in a dish,1,113.0,116.0,3.0,23.0,34.0,11.0,0.9466,0.0,-90.0,-82.0,8.0,8.0,3.6666666666666665,-86.0,86.0
+<5 s,s_apQIQUhFc_2,Music plays as gunshots ring out,1,28.0,30.0,2.0,12.0,35.0,23.0,0.9904,0.08695652173913043,-16.0,5.0,21.0,21.0,11.5,-5.5,5.5
+<5 s,s_apQIQUhFc_3,A man laughs,3,176.0,178.0,2.0,174.0,184.0,10.0,0.9393,0.2,-2.0,6.0,8.0,8.0,5.0,2.0,2.0
+<5 s,sd7x_Vssqlw_1,A man is talking and a car is driving,2,107.0,109.0,2.0,4.0,30.0,26.0,0.8942,0.0,-103.0,-79.0,24.0,24.0,13.0,-91.0,91.0
+<5 s,sd_XV-ylviw_2,A door creaks as it opens,2,269.0,271.0,2.0,118.0,127.0,9.0,0.9577,0.0,-151.0,-144.0,7.0,7.0,4.5,-147.5,147.5
+<5 s,se87d6yxEOA_1,"A train is moving along, blowing its whistle",4,130.0,134.0,4.0,96.0,109.0,13.0,0.9547,0.0,-34.0,-25.0,9.0,9.0,3.25,-29.5,29.5
+<5 s,slZLHwNbbt4_1,A train is running and blowing its horn,11,25.0,28.0,3.0,18.0,33.0,15.0,0.9824,0.2,-7.0,5.0,12.0,12.0,5.0,-1.0,1.0
+<5 s,smGI3C1N_Zc_2,A door opens and closes,7,53.0,55.0,2.0,49.0,54.0,5.0,0.9475,0.16666666666666666,-4.0,-1.0,3.0,3.0,2.5,-2.5,2.5
+<5 s,sofxkNWaP0s_1,A plane flies in the wind as a man and child are talking,2,7.0,11.0,4.0,23.0,27.0,4.0,0.9651,0.0,16.0,16.0,0.0,0.0,1.0,16.0,16.0
+<5 s,spJCm8tD9Zo_1,Chickens cluck amid the noise,5,152.0,155.0,3.0,225.0,235.0,10.0,0.9666,0.0,73.0,80.0,7.0,7.0,3.3333333333333335,76.5,76.5
+<5 s,spJCm8tD9Zo_2,Laughter rings out amid the noise,1,234.0,237.0,3.0,230.0,235.0,5.0,0.9591,0.14285714285714285,-4.0,-2.0,2.0,2.0,1.6666666666666667,-3.0,3.0
+<5 s,sr1_Gfm0syI_2,People are cheering,1,127.0,130.0,3.0,2.0,7.0,5.0,0.9433,0.0,-125.0,-123.0,2.0,2.0,1.6666666666666667,-124.0,124.0
+<5 s,sr1_Gfm0syI_3,A cow is mooing,4,131.0,134.0,3.0,97.0,109.0,12.0,0.9159,0.0,-34.0,-25.0,9.0,9.0,4.0,-29.5,29.5
+<5 s,sxIvBMSavMQ_2,A man is spraying something while birds are chirping,3,66.0,70.0,4.0,59.0,79.0,20.0,0.9518,0.2,-7.0,9.0,16.0,16.0,5.0,1.0,1.0
+<5 s,t25U-v4k4ts_1,Air blows amid the noise,1,0.0,2.0,2.0,146.0,160.0,14.0,0.9137,0.0,146.0,158.0,12.0,12.0,7.0,152.0,152.0
+<5 s,t25U-v4k4ts_2,"Amid the noise, something is hitting wood and bees are buzzing",1,92.0,94.0,2.0,132.0,140.0,8.0,0.9139,0.0,40.0,46.0,6.0,6.0,4.0,43.0,43.0
+<5 s,t69a8aRKhmc_2,Several pigeons are flying simultaneously,1,132.0,135.0,3.0,1.0,6.0,5.0,0.9737,0.0,-131.0,-129.0,2.0,2.0,1.6666666666666667,-130.0,130.0
+<5 s,t8CV69hcvF0_1,A woman is sneezing,23,19.0,22.0,3.0,12.0,24.0,12.0,0.9727,0.25,-7.0,2.0,9.0,9.0,4.0,-2.5,2.5
+<5 s,t8CV69hcvF0_2,Someone blowing their nose,1,171.0,174.0,3.0,178.0,183.0,5.0,0.9534,0.0,7.0,9.0,2.0,2.0,1.6666666666666667,8.0,8.0
+<5 s,tDVADusiIoc_1,A woman is screaming,1,19.0,21.0,2.0,19.0,23.0,4.0,0.9534,0.5,0.0,2.0,2.0,2.0,2.0,1.0,1.0
+<5 s,tDVADusiIoc_2,Machinery is making noise,1,44.0,45.0,1.0,0.0,2.0,2.0,0.9235,0.0,-44.0,-43.0,1.0,1.0,2.0,-43.5,43.5
+<5 s,tDlfY3nmx1A_1,A man's voice and several people laughing,3,101.0,104.0,3.0,39.0,46.0,7.0,0.9463,0.0,-62.0,-58.0,4.0,4.0,2.3333333333333335,-60.0,60.0
+<5 s,tDlfY3nmx1A_2,A man's voice and applause,1,187.0,188.0,1.0,152.0,159.0,7.0,0.9734,0.0,-35.0,-29.0,6.0,6.0,7.0,-32.0,32.0
+<5 s,tDlysoZiA1I_2,A man is talking,1,49.0,51.0,2.0,30.0,33.0,3.0,0.9216,0.0,-19.0,-18.0,1.0,1.0,1.5,-18.5,18.5
+<5 s,tEE3MpBt1sg_1,A man is laughing,1,31.0,32.0,1.0,3.0,10.0,7.0,0.9694,0.0,-28.0,-22.0,6.0,6.0,7.0,-25.0,25.0
+<5 s,tEE3MpBt1sg_2,A man is laughing and a machine is running,1,42.0,46.0,4.0,48.0,54.0,6.0,0.92,0.0,6.0,8.0,2.0,2.0,1.5,7.0,7.0
+<5 s,tH-q8LXgHEc_1,Lots of birds are chirping and the sound of wings flapping,6,16.0,18.0,2.0,22.0,28.0,6.0,0.9397,0.0,6.0,10.0,4.0,4.0,3.0,8.0,8.0
+<5 s,tH-q8LXgHEc_2,Birds chirp while car horns honk nearby,1,46.0,48.0,2.0,27.0,37.0,10.0,0.851,0.0,-19.0,-11.0,8.0,8.0,5.0,-15.0,15.0
+<5 s,tH17JPjDPnc_3,"With metal clanking in the background, several goats are bleating",1,242.0,245.0,3.0,230.0,270.0,40.0,0.9587,0.075,-12.0,25.0,37.0,37.0,13.333333333333334,6.5,6.5
+<5 s,tPJvjq9QePY_1,Electronic sounds play,1,0.0,1.0,1.0,26.0,30.0,4.0,0.9772,0.0,26.0,29.0,3.0,3.0,4.0,27.5,27.5
+<5 s,tPJvjq9QePY_2,A woman's voice,4,15.0,18.0,3.0,13.0,17.0,4.0,0.973,0.4,-2.0,-1.0,1.0,1.0,1.3333333333333333,-1.5,1.5
+<5 s,tPJvjq9QePY_3,Sheep are bleating,8,27.0,30.0,3.0,26.0,30.0,4.0,0.9727,0.75,-1.0,0.0,1.0,1.0,1.3333333333333333,-0.5,0.5
+<5 s,tQWGZLItBXk_3,Eplosions are coming from the game,5,161.0,163.0,2.0,0.0,4.0,4.0,0.9884,0.0,-161.0,-159.0,2.0,2.0,2.0,-160.0,160.0
+<5 s,tRJVUSdMjQI_2,"Music is playing, a man is speaking, a camera shutter clicks, and people are cheering and applauding",1,217.0,220.0,3.0,148.0,169.0,21.0,0.9607,0.0,-69.0,-51.0,18.0,18.0,7.0,-60.0,60.0
+<5 s,tZGN5a7ybxo_1,A train runs with its horn and bell sounding,4,11.0,13.0,2.0,10.0,14.0,4.0,0.9226,0.5,-1.0,1.0,2.0,2.0,2.0,0.0,0.0
+<5 s,tZGN5a7ybxo_3,A train is running with horn sounding,4,11.0,13.0,2.0,8.0,15.0,7.0,0.9243,0.2857142857142857,-3.0,2.0,5.0,5.0,3.5,-0.5,0.5
+<5 s,ti_DFTC-5vU_1,"Cicadas are singing, a duck quacks, an instrument plays, and several people are talking",3,3.0,5.0,2.0,1.0,4.0,3.0,0.8857,0.25,-2.0,-1.0,1.0,1.0,1.5,-1.5,1.5
+<5 s,ti_DFTC-5vU_2,"Cicadas are singing, a duck quacks, and several people laugh and talk",1,44.0,48.0,4.0,2.0,4.0,2.0,0.8918,0.0,-42.0,-44.0,-2.0,2.0,0.5,-43.0,43.0
+<5 s,tvP4E1r7yk8_3,Train rumbling and a whistle,3,186.0,190.0,4.0,25.0,43.0,18.0,0.9579,0.0,-161.0,-147.0,14.0,14.0,4.5,-154.0,154.0
+<5 s,u--KhUW8l1Y_2,Someone is talking while engines run,1,30.0,31.0,1.0,29.0,31.0,2.0,0.9602,0.5,-1.0,0.0,1.0,1.0,2.0,-0.5,0.5
+<5 s,u-6osTkkOfY_3,A steam whistle is blowing while the wind is blowing,1,113.0,115.0,2.0,113.0,119.0,6.0,0.9378,0.3333333333333333,0.0,4.0,4.0,4.0,3.0,2.0,2.0
+<5 s,u5RmF3c3_Aw_1,A car moves along as someone whistles,1,29.0,31.0,2.0,30.0,40.0,10.0,0.9325,0.09090909090909091,1.0,9.0,8.0,8.0,5.0,5.0,5.0
+<5 s,u9A6VZQCZpU_1,An alarm is going off while engines are running,1,79.0,81.0,2.0,11.0,24.0,13.0,0.8852,0.0,-68.0,-57.0,11.0,11.0,6.5,-62.5,62.5
+<5 s,u9A6VZQCZpU_2,A man is announcing while the crowd is laughing and shouting over the sound of engines,1,172.0,176.0,4.0,158.0,174.0,16.0,0.9149,0.1111111111111111,-14.0,-2.0,12.0,12.0,4.0,-8.0,8.0
+<5 s,uFoga8sHpiw_1,Someone whistles softly,4,148.0,152.0,4.0,85.0,93.0,8.0,0.9738,0.0,-63.0,-59.0,4.0,4.0,2.0,-61.0,61.0
+<5 s,uJV8NDaHqqk_1,Birds chirping over the sound of insects buzzing,4,28.0,30.0,2.0,47.0,76.0,29.0,0.9475,0.0,19.0,46.0,27.0,27.0,14.5,32.5,32.5
+<5 s,uJe1Gvp-MeM_2,Chickens are clucking,2,87.0,90.0,3.0,7.0,12.0,5.0,0.9692,0.0,-80.0,-78.0,2.0,2.0,1.6666666666666667,-79.0,79.0
+<5 s,uK5doE8g_nY_2,Helicopter rotors are spinning,1,44.0,47.0,3.0,42.0,103.0,61.0,0.9457,0.04918032786885246,-2.0,56.0,58.0,58.0,20.333333333333332,27.0,27.0
+<5 s,uOpoD0gGXcs_1,Chickens are clucking while birds call in the background,8,120.0,122.0,2.0,120.0,128.0,8.0,0.9369,0.25,0.0,6.0,6.0,6.0,4.0,3.0,3.0
+<5 s,uOpoD0gGXcs_2,Someone whistles as birds sing,5,126.0,128.0,2.0,121.0,128.0,7.0,0.9684,0.2857142857142857,-5.0,0.0,5.0,5.0,3.5,-2.5,2.5
+<5 s,uYT5gxnyMWM_2,A women screams loudly,3,29.0,30.0,1.0,20.0,24.0,4.0,0.9564,0.0,-9.0,-6.0,3.0,3.0,4.0,-7.5,7.5
+<5 s,ucQikcv96gM_1,A man is speaking while birds nearby are chirping and pecking at food,4,80.0,81.0,1.0,134.0,144.0,10.0,0.9487,0.0,54.0,63.0,9.0,9.0,10.0,58.5,58.5
+<5 s,uiItxDsDMFI_1,Someone is walking on dirt and fallen leaves,1,118.0,120.0,2.0,30.0,46.0,16.0,0.9167,0.0,-88.0,-74.0,14.0,14.0,8.0,-81.0,81.0
+<5 s,uiNuH51lzVY_1,A man is speaking somewhere with water flowing nearby,2,95.0,98.0,3.0,0.0,14.0,14.0,0.9818,0.0,-95.0,-84.0,11.0,11.0,4.666666666666667,-89.5,89.5
+<5 s,ukxt9I7eMMg_2,A woman is talking as metal clangs,1,99.0,100.0,1.0,100.0,105.0,5.0,0.9354,0.0,1.0,5.0,4.0,4.0,5.0,3.0,3.0
+<5 s,uqFtmnhuqA8_2,Door stays shut,2,105.0,107.0,2.0,100.0,112.0,12.0,0.8854,0.16666666666666666,-5.0,5.0,10.0,10.0,6.0,0.0,0.0
+<5 s,uzQnlJXBbOM_1,A man's voice is speaking,5,114.0,118.0,4.0,114.0,130.0,16.0,0.9554,0.25,0.0,12.0,12.0,12.0,4.0,6.0,6.0
+<5 s,uzQnlJXBbOM_2,Some electronic sounds,6,56.0,57.0,1.0,46.0,52.0,6.0,0.9745,0.0,-10.0,-5.0,5.0,5.0,6.0,-7.5,7.5
+<5 s,v0x1odnXtP0_2,Mouse clicks echo in the background,7,47.0,49.0,2.0,78.0,116.0,38.0,0.9542,0.0,31.0,67.0,36.0,36.0,19.0,49.0,49.0
+<5 s,v3EwremxU2w_1,Someone is talking while a dog barks,1,80.0,82.0,2.0,2.0,6.0,4.0,0.9606,0.0,-78.0,-76.0,2.0,2.0,2.0,-77.0,77.0
+<5 s,v7Pz4dWmggg_2,A man yells,2,23.0,27.0,4.0,1.0,4.0,3.0,0.9301,0.0,-22.0,-23.0,-1.0,1.0,0.75,-22.5,22.5
+<5 s,vBslzh7saPw_1,Cars speeding by,1,0.0,1.0,1.0,54.0,104.0,50.0,0.9303,0.0,54.0,103.0,49.0,49.0,50.0,78.5,78.5
+<5 s,vH4z5OI5aNY_1,A whistle blows and a crowd chats,1,122.0,125.0,3.0,120.0,128.0,8.0,0.9663,0.375,-2.0,3.0,5.0,5.0,2.6666666666666665,0.5,0.5
+<5 s,vH4z5OI5aNY_2,Engines run and a whistle blows,2,53.0,57.0,4.0,121.0,129.0,8.0,0.9699,0.0,68.0,72.0,4.0,4.0,2.0,70.0,70.0
+<5 s,vH4z5OI5aNY_3,Horns honk and engines run,1,160.0,163.0,3.0,118.0,133.0,15.0,0.9622,0.0,-42.0,-30.0,12.0,12.0,5.0,-36.0,36.0
+<5 s,vJrjSeP17yE_2,A warning tone sounds as someone snores,1,76.0,80.0,4.0,8.0,14.0,6.0,0.9718,0.0,-68.0,-66.0,2.0,2.0,1.5,-67.0,67.0
+<5 s,v_OQfEIq_PY_1,A whistle is blowing over engine sounds,1,67.0,69.0,2.0,2.0,7.0,5.0,0.9781,0.0,-65.0,-62.0,3.0,3.0,2.5,-63.5,63.5
+<5 s,vaX_J_G3638_1,Horses are walking with their hooves clacking while people are talking and a whistle is blowing,1,79.0,82.0,3.0,111.0,117.0,6.0,0.9192,0.0,32.0,35.0,3.0,3.0,2.0,33.5,33.5
+<5 s,vcmWS_mvti8_1,Music is playing over a man talking and sound effects along with a bomb blast,19,115.0,117.0,2.0,106.0,119.0,13.0,0.8915,0.15384615384615385,-9.0,2.0,11.0,11.0,6.5,-3.5,3.5
+<5 s,vdoxuJn9lTc_1,A woman is speaking,4,12.0,16.0,4.0,13.0,18.0,5.0,0.9542,0.5,1.0,2.0,1.0,1.0,1.25,1.5,1.5
+<5 s,vdoxuJn9lTc_2,Someone burps,4,9.0,12.0,3.0,8.0,12.0,4.0,0.9396,0.75,-1.0,0.0,1.0,1.0,1.3333333333333333,-0.5,0.5
+<5 s,vdoxuJn9lTc_3,A man speaks,1,69.0,72.0,3.0,12.0,18.0,6.0,0.9678,0.0,-57.0,-54.0,3.0,3.0,2.0,-55.5,55.5
+<5 s,vh30P49Po6s_2,A man is talking,1,69.0,70.0,1.0,0.0,4.0,4.0,0.9927,0.0,-69.0,-66.0,3.0,3.0,4.0,-67.5,67.5
+<5 s,vimzuGQvdcU_1,Water flows as several people cheer,1,136.0,139.0,3.0,112.0,118.0,6.0,0.9615,0.0,-24.0,-21.0,3.0,3.0,2.0,-22.5,22.5
+<5 s,viuTg1M-dqg_1,Something is being hit,2,103.0,107.0,4.0,102.0,108.0,6.0,0.97,0.6666666666666666,-1.0,1.0,2.0,2.0,1.5,0.0,0.0
+<5 s,viuTg1M-dqg_2,A cutting tool is being used,1,115.0,119.0,4.0,111.0,116.0,5.0,0.9712,0.125,-4.0,-3.0,1.0,1.0,1.25,-3.5,3.5
+<5 s,vlS6YMeWAPo_1,A sheep bleats,13,24.0,26.0,2.0,24.0,26.0,2.0,0.9613,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+<5 s,vlS6YMeWAPo_2,Someone is speaking,3,61.0,65.0,4.0,62.0,66.0,4.0,0.9711,0.6,1.0,1.0,0.0,0.0,1.0,1.0,1.0
+<5 s,vlS6YMeWAPo_3,Someone whistles,4,41.0,44.0,3.0,3.0,5.0,2.0,0.9709,0.0,-38.0,-39.0,-1.0,1.0,0.6666666666666666,-38.5,38.5
+<5 s,vmrxwuAMb2I_1,Someone blows air as a dog barks,3,33.0,37.0,4.0,5.0,6.0,1.0,0.8079,0.0,-28.0,-31.0,-3.0,3.0,0.25,-29.5,29.5
+<5 s,vqZuVbG6-HI_1,People are talking and car horns are honking,1,29.0,31.0,2.0,56.0,65.0,9.0,0.9348,0.0,27.0,34.0,7.0,7.0,4.5,30.5,30.5
+<5 s,vr8ZXjEBhMQ_1,A man is laughing,2,119.0,120.0,1.0,80.0,88.0,8.0,0.9508,0.0,-39.0,-32.0,7.0,7.0,8.0,-35.5,35.5
+<5 s,vr8ZXjEBhMQ_2,A car brakes,1,122.0,123.0,1.0,39.0,44.0,5.0,0.9454,0.0,-83.0,-79.0,4.0,4.0,5.0,-81.0,81.0
+<5 s,vzceMbkl_Wc_3,"A door closes, a man laughs, and the door opens",1,224.0,225.0,1.0,64.0,70.0,6.0,0.944,0.0,-160.0,-155.0,5.0,5.0,6.0,-157.5,157.5
+<5 s,vzxHnu-SFEw_1,"Several people talking, a woman's voice and the sound of scissors being used",1,55.0,57.0,2.0,94.0,148.0,54.0,0.923,0.0,39.0,91.0,52.0,52.0,27.0,65.0,65.0
+<5 s,w0xsN8_X18Y_1,Music and car sounds play,4,17.0,19.0,2.0,0.0,4.0,4.0,0.9867,0.0,-17.0,-15.0,2.0,2.0,2.0,-16.0,16.0
+<5 s,w2bYrCVLT60_1,A man is talking,1,106.0,110.0,4.0,12.0,42.0,30.0,0.9622,0.0,-94.0,-68.0,26.0,26.0,7.5,-81.0,81.0
+<5 s,w2bYrCVLT60_2,A man is talking while ducks are quacking,1,106.0,110.0,4.0,3.0,13.0,10.0,0.9589,0.0,-103.0,-97.0,6.0,6.0,2.5,-100.0,100.0
+<5 s,w2htir_si7g_1,Someone is whistling and another person is singing,1,32.0,36.0,4.0,126.0,139.0,13.0,0.9325,0.0,94.0,103.0,9.0,9.0,3.25,98.5,98.5
+<5 s,w5W_5Kqtc8E_2,A boat is sailing,1,175.0,178.0,3.0,0.0,100.0,100.0,0.8805,0.0,-175.0,-78.0,97.0,97.0,33.333333333333336,-126.5,126.5
+<5 s,w9lpbUn0hPc_1,Wind blows and something is being sprayed,5,36.0,37.0,1.0,190.0,199.0,9.0,0.7456,0.0,154.0,162.0,8.0,8.0,9.0,158.0,158.0
+<5 s,wDVMhEdTiVw_1,Someone is playing a flute,4,20.0,21.0,1.0,5.0,11.0,6.0,0.9829,0.0,-15.0,-10.0,5.0,5.0,6.0,-12.5,12.5
+<5 s,wDVMhEdTiVw_2,"Gunfire, birds are chirping",4,27.0,31.0,4.0,62.0,74.0,12.0,0.9587,0.0,35.0,43.0,8.0,8.0,3.0,39.0,39.0
+<5 s,wIJK3-5y0kA_1,A baby's voice,10,8.0,9.0,1.0,8.0,20.0,12.0,0.9685,0.08333333333333333,0.0,11.0,11.0,11.0,12.0,5.5,5.5
+<5 s,wIJK3-5y0kA_2,A kissing sound effect,2,187.0,189.0,2.0,111.0,121.0,10.0,0.928,0.0,-76.0,-68.0,8.0,8.0,5.0,-72.0,72.0
+<5 s,wP8ZKrlx3oA_1,A horn blares and a car moves along while rain falls,1,3.0,7.0,4.0,0.0,9.0,9.0,0.9932,0.4444444444444444,-3.0,2.0,5.0,5.0,2.25,-0.5,0.5
+<5 s,wRBHTgrbiwg_1,Wings are buzzing and a rooster is crowing,1,10.0,13.0,3.0,34.0,38.0,4.0,0.9139,0.0,24.0,25.0,1.0,1.0,1.3333333333333333,24.5,24.5
+<5 s,wRBHTgrbiwg_2,Birds are chirping and a man is talking,2,60.0,61.0,1.0,59.0,62.0,3.0,0.966,0.3333333333333333,-1.0,1.0,2.0,2.0,3.0,0.0,0.0
+<5 s,wWVxe57200I_1,A woman is talking while the wind blows and birds are singing,2,87.0,91.0,4.0,0.0,15.0,15.0,0.9698,0.0,-87.0,-76.0,11.0,11.0,3.75,-81.5,81.5
+<5 s,weDbePuc-Xc_1,An insect is flying and a drumroll is playing,1,17.0,19.0,2.0,65.0,73.0,8.0,0.8718,0.0,48.0,54.0,6.0,6.0,4.0,51.0,51.0
+<5 s,weDbePuc-Xc_3,"Music is playing, someone is crying",1,37.0,40.0,3.0,1.0,4.0,3.0,0.954,0.0,-36.0,-36.0,0.0,0.0,1.0,-36.0,36.0
+<5 s,weDbePuc-Xc_4,"Music is playing, a car is approaching, and something is being run over",1,66.0,70.0,4.0,69.0,81.0,12.0,0.9196,0.06666666666666667,3.0,11.0,8.0,8.0,3.0,7.0,7.0
+<5 s,wl44ppID9ds_1,Water splashes,1,79.0,81.0,2.0,0.0,26.0,26.0,0.9342,0.0,-79.0,-55.0,24.0,24.0,13.0,-67.0,67.0
+<5 s,wl44ppID9ds_2,A wet dog shakes itself,1,76.0,78.0,2.0,1.0,6.0,5.0,0.9279,0.0,-75.0,-72.0,3.0,3.0,2.5,-73.5,73.5
+<5 s,wnNNcxAPwGQ_1,An engine running and a man's voice,1,33.0,37.0,4.0,2.0,8.0,6.0,0.9067,0.0,-31.0,-29.0,2.0,2.0,1.5,-30.0,30.0
+<5 s,wnpJndXuxLc_1,A train horn is sounding,14,1.0,3.0,2.0,64.0,73.0,9.0,0.966,0.0,63.0,70.0,7.0,7.0,4.5,66.5,66.5
+<5 s,wqZ135_Ssz0_1,A man talks and laughs as wind blows and water flows,1,13.0,16.0,3.0,64.0,68.0,4.0,0.8657,0.0,51.0,52.0,1.0,1.0,1.3333333333333333,51.5,51.5
+<5 s,wsHBIgzs9Fs_1,"Horn sounds, engine noise",3,16.0,18.0,2.0,138.0,208.0,70.0,0.8614,0.0,122.0,190.0,68.0,68.0,35.0,156.0,156.0
+<5 s,wsHBIgzs9Fs_2,Voices carry over the engine noise,8,20.0,21.0,1.0,3.0,19.0,16.0,0.9042,0.0,-17.0,-2.0,15.0,15.0,16.0,-9.5,9.5
+<5 s,wwyfGO2J__4_1,People are talking and a man is speaking into a microphone,1,0.0,4.0,4.0,0.0,4.0,4.0,0.9834,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+<5 s,wz7N8YRy74I_1,A rooster crows,2,31.0,34.0,3.0,0.0,4.0,4.0,0.8833,0.0,-31.0,-30.0,1.0,1.0,1.3333333333333333,-30.5,30.5
+<5 s,wzXPRI7eXOM_1,"A man's voice, an engine noise",2,0.0,2.0,2.0,80.0,85.0,5.0,0.9625,0.0,80.0,83.0,3.0,3.0,2.5,81.5,81.5
+<5 s,x-Yx0rqr1vY_1,Music is playing as frogs croak,3,64.0,68.0,4.0,162.0,177.0,15.0,0.9421,0.0,98.0,109.0,11.0,11.0,3.75,103.5,103.5
+<5 s,x-gIWB__rIE_1,Flames are burning,1,0.0,4.0,4.0,0.0,5.0,5.0,0.9687,0.8,0.0,1.0,1.0,1.0,1.25,0.5,0.5
+<5 s,x-gIWB__rIE_2,Someone is grinding pepper amid background noise,1,217.0,218.0,1.0,0.0,8.0,8.0,0.9762,0.0,-217.0,-210.0,7.0,7.0,8.0,-213.5,213.5
+<5 s,x-gIWB__rIE_3,A man is talking and chopping with a knife amid background noise,3,65.0,66.0,1.0,4.0,18.0,14.0,0.9864,0.0,-61.0,-48.0,13.0,13.0,14.0,-54.5,54.5
+<5 s,x4a9YGIw4ok_1,Pressing the lever sends water rushing through the toilet,2,34.0,37.0,3.0,74.0,83.0,9.0,0.9616,0.0,40.0,46.0,6.0,6.0,3.0,43.0,43.0
+<5 s,x4dZyf9Gbj0_1,"A woman is sneezing, sniffling",10,30.0,33.0,3.0,11.0,21.0,10.0,0.9419,0.0,-19.0,-12.0,7.0,7.0,3.3333333333333335,-15.5,15.5
+<5 s,x6ijhqRY38s_1,A man grinds pepper as he speaks,1,50.0,54.0,4.0,46.0,62.0,16.0,0.9071,0.25,-4.0,8.0,12.0,12.0,4.0,2.0,2.0
+<5 s,xKB8O8LTs6s_2,"Music plays, something explodes",4,69.0,70.0,1.0,65.0,72.0,7.0,0.9181,0.14285714285714285,-4.0,2.0,6.0,6.0,7.0,-1.0,1.0
+<5 s,xKB8O8LTs6s_3,Music is playing while gunshots ring out,3,68.0,70.0,2.0,48.0,54.0,6.0,0.928,0.0,-20.0,-16.0,4.0,4.0,3.0,-18.0,18.0
+<5 s,xSKJGCItUWE_1,Voices over a motor running,2,32.0,35.0,3.0,0.0,5.0,5.0,0.9916,0.0,-32.0,-30.0,2.0,2.0,1.6666666666666667,-31.0,31.0
+<5 s,xSN_cBFt-PI_1,A clock is ticking and chiming,1,119.0,122.0,3.0,25.0,35.0,10.0,0.9209,0.0,-94.0,-87.0,7.0,7.0,3.3333333333333335,-90.5,90.5
+<5 s,xZepNM9qcRA_1,A man is speaking while a motorcycle engine runs,1,172.0,176.0,4.0,48.0,66.0,18.0,0.9553,0.0,-124.0,-110.0,14.0,14.0,4.5,-117.0,117.0
+<5 s,xmdGaCbvhFc_1,"A man's voice, the sound of water",1,78.0,82.0,4.0,80.0,91.0,11.0,0.8669,0.15384615384615385,2.0,9.0,7.0,7.0,2.75,5.5,5.5
+<5 s,xmiUIOhtZyQ_1,Burping sounds are present amid background noise,11,70.0,74.0,4.0,71.0,81.0,10.0,0.9,0.2727272727272727,1.0,7.0,6.0,6.0,2.5,4.0,4.0
+<5 s,xtWeJ56-U-g_2,Someone is typing,1,94.0,97.0,3.0,45.0,52.0,7.0,0.9697,0.0,-49.0,-45.0,4.0,4.0,2.3333333333333335,-47.0,47.0
+<5 s,xvDdE3zNf8Y_1,A woman is speaking and plastic is being handled,1,121.0,125.0,4.0,31.0,44.0,13.0,0.9784,0.0,-90.0,-81.0,9.0,9.0,3.25,-85.5,85.5
+<5 s,y2ZBGpgbhHM_1,Dogs and birds are making noise,8,13.0,17.0,4.0,0.0,9.0,9.0,0.9571,0.0,-13.0,-8.0,5.0,5.0,2.25,-10.5,10.5
+<5 s,y2ZBGpgbhHM_2,A man is talking,2,20.0,22.0,2.0,3.0,23.0,20.0,0.9572,0.1,-17.0,1.0,18.0,18.0,10.0,-8.0,8.0
+<5 s,y4NpJekTMT8_2,Talking on the phone,7,75.0,77.0,2.0,147.0,203.0,56.0,0.938,0.0,72.0,126.0,54.0,54.0,28.0,99.0,99.0
+<5 s,y4NpJekTMT8_3,Burping,1,71.0,73.0,2.0,6.0,19.0,13.0,0.9495,0.0,-65.0,-54.0,11.0,11.0,6.5,-59.5,59.5
+<5 s,y4NpJekTMT8_4,A boy is beatboxing,5,119.0,123.0,4.0,115.0,123.0,8.0,0.9345,0.5,-4.0,0.0,4.0,4.0,2.0,-2.0,2.0
+<5 s,yDoT73BWsdA_1,The sound of a car hitting the breaks as it drives by over the sound of laughter,1,93.0,94.0,1.0,178.0,186.0,8.0,0.9717,0.0,85.0,92.0,7.0,7.0,8.0,88.5,88.5
+<5 s,yHeVV-xeOxQ_1,A woman is talking and a rooster crows,2,2.0,5.0,3.0,29.0,61.0,32.0,0.9385,0.0,27.0,56.0,29.0,29.0,10.666666666666666,41.5,41.5
+<5 s,yHtbLI6kxAc_1,"While a woman talks, a horn blares and pigeons take flight",1,126.0,130.0,4.0,11.0,19.0,8.0,0.9426,0.0,-115.0,-111.0,4.0,4.0,2.0,-113.0,113.0
+<5 s,yKKOHg5xlPE_1,A door opens and closes,5,102.0,104.0,2.0,100.0,104.0,4.0,0.9381,0.5,-2.0,0.0,2.0,2.0,2.0,-1.0,1.0
+<5 s,yRx9txMcBl0_1,A horn sounds,5,8.0,11.0,3.0,44.0,55.0,11.0,0.9551,0.0,36.0,44.0,8.0,8.0,3.6666666666666665,40.0,40.0
+<5 s,yRx9txMcBl0_2,A car engine and brakes,1,38.0,41.0,3.0,41.0,48.0,7.0,0.9514,0.0,3.0,7.0,4.0,4.0,2.3333333333333335,5.0,5.0
+<5 s,yRx9txMcBl0_3,Engine noise and game audio,2,52.0,53.0,1.0,39.0,52.0,13.0,0.9523,0.0,-13.0,-1.0,12.0,12.0,13.0,-7.0,7.0
+<5 s,yRx9txMcBl0_4,Engine noise blends with something crashing into an object,10,85.0,87.0,2.0,76.0,86.0,10.0,0.8848,0.09090909090909091,-9.0,-1.0,8.0,8.0,5.0,-5.0,5.0
+<5 s,yeFvk9x0wWI_1,Something pops,1,29.0,31.0,2.0,28.0,31.0,3.0,0.9724,0.6666666666666666,-1.0,0.0,1.0,1.0,1.5,-0.5,0.5
+<5 s,yhQ2Lg-7qDY_2,A woman is kneading meat while talking,1,10.0,14.0,4.0,10.0,20.0,10.0,0.965,0.4,0.0,6.0,6.0,6.0,2.5,3.0,3.0
+<5 s,z4uELRI6p08_1,Someone is laughing,2,48.0,52.0,4.0,4.0,11.0,7.0,0.9622,0.0,-44.0,-41.0,3.0,3.0,1.75,-42.5,42.5
+<5 s,z5iUE5h0EPs_1,birds and goats are making noise,11,0.0,1.0,1.0,0.0,1.0,1.0,0.9834,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+<5 s,z5iUE5h0EPs_2,Goats and chickens are making noise while birds are flying,1,59.0,61.0,2.0,0.0,2.0,2.0,0.9806,0.0,-59.0,-59.0,0.0,0.0,1.0,-59.0,59.0
+<5 s,z9-3K1PFMjw_1,Someone pushes buttons,2,17.0,19.0,2.0,8.0,10.0,2.0,0.9536,0.0,-9.0,-9.0,0.0,0.0,1.0,-9.0,9.0
+<5 s,z9-3K1PFMjw_3,A warning beeps and a phone rings as a machine responds with a woman's voice,1,58.0,61.0,3.0,46.0,50.0,4.0,0.9554,0.0,-12.0,-11.0,1.0,1.0,1.3333333333333333,-11.5,11.5
+<5 s,zCrAfDfv6-A_2,Something makes mechanical noises while someone is whistling,1,34.0,35.0,1.0,33.0,36.0,3.0,0.9528,0.3333333333333333,-1.0,1.0,2.0,2.0,3.0,0.0,0.0
+<5 s,zCrAfDfv6-A_3,A man is talking,1,62.0,64.0,2.0,63.0,64.0,1.0,0.9607,0.5,1.0,0.0,-1.0,1.0,0.5,0.5,0.5
+<5 s,zF8yoL0rkbI_1,A man is talking as cars drive by and wind blows,5,89.0,93.0,4.0,91.0,95.0,4.0,0.952,0.3333333333333333,2.0,2.0,0.0,0.0,1.0,2.0,2.0
+<5 s,zF8yoL0rkbI_2,Horns honk while cars drive past and the wind blows,8,93.0,94.0,1.0,93.0,106.0,13.0,0.9042,0.07692307692307693,0.0,12.0,12.0,12.0,13.0,6.0,6.0
+<5 s,zTLVJCo4WEE_2,Gunshots ring out and metal clangs as insects chirp,5,55.0,57.0,2.0,55.0,59.0,4.0,0.9695,0.5,0.0,2.0,2.0,2.0,2.0,1.0,1.0
+<5 s,zU-oKUEckKo_1,A horn blows amid vehicle noise,3,3.0,7.0,4.0,47.0,64.0,17.0,0.9483,0.0,44.0,57.0,13.0,13.0,4.25,50.5,50.5
+<5 s,zY3icUyMdh8_2,"Amid voices, an engine starts up",1,57.0,58.0,1.0,19.0,31.0,12.0,0.8973,0.0,-38.0,-27.0,11.0,11.0,12.0,-32.5,32.5
+<5 s,zY3icUyMdh8_3,Several people are talking inside a moving bus,2,101.0,105.0,4.0,134.0,297.0,163.0,0.8362,0.0,33.0,192.0,159.0,159.0,40.75,112.5,112.5
+<5 s,zgUgkpk78xU_1,A train whistle sounds while a crossing bell is ringing,1,55.0,58.0,3.0,19.0,31.0,12.0,0.9746,0.0,-36.0,-27.0,9.0,9.0,4.0,-31.5,31.5
+<5 s,zl3OnWjr3Y4_2,A man laughs,1,212.0,214.0,2.0,209.0,219.0,10.0,0.9418,0.2,-3.0,5.0,8.0,8.0,5.0,1.0,1.0
+<5 s,zl3OnWjr3Y4_3,"As a man talks, wood creaks",1,244.0,246.0,2.0,197.0,208.0,11.0,0.957,0.0,-47.0,-38.0,9.0,9.0,5.5,-42.5,42.5
+<5 s,zvmXKyAFq80_1,A car engine runs and a door shuts,1,2.0,3.0,1.0,10.0,12.0,2.0,0.9629,0.0,8.0,9.0,1.0,1.0,2.0,8.5,8.5
+<5 s,zvmXKyAFq80_3,A car drives,1,23.0,26.0,3.0,0.0,11.0,11.0,0.9493,0.0,-23.0,-15.0,8.0,8.0,3.6666666666666665,-19.0,19.0
+<5 s,zwOBqeFTgiU_1,Two babies are crying while a woman is speaking,1,53.0,55.0,2.0,57.0,66.0,9.0,0.9566,0.0,4.0,11.0,7.0,7.0,4.5,7.5,7.5
+5-<10 s,rwT__ERCUno_3,A man's voice blends with engine noise,1,105.0,112.0,7.0,101.0,112.0,11.0,0.9276,0.6363636363636364,-4.0,0.0,4.0,4.0,1.5714285714285714,-2.0,2.0
+5-<10 s,rwb6PSAee5Y_1,Someone opens and closes a door,1,21.0,26.0,5.0,54.0,58.0,4.0,0.8507,0.0,33.0,32.0,-1.0,1.0,0.8,32.5,32.5
+5-<10 s,rwtmaKiCcQU_1,Engines are running and something is being sprayed,3,36.0,41.0,5.0,2.0,7.0,5.0,0.9675,0.0,-34.0,-34.0,0.0,0.0,1.0,-34.0,34.0
+5-<10 s,s4Uz1Ffgo04_1,A siren goes off and the sound of a car driving,2,0.0,9.0,9.0,0.0,11.0,11.0,0.9723,0.8181818181818182,0.0,2.0,2.0,2.0,1.2222222222222223,1.0,1.0
+5-<10 s,sEprKHm8Sj8_1,"With engine noise rumbling, a horn blares out",1,40.0,45.0,5.0,87.0,108.0,21.0,0.9372,0.0,47.0,63.0,16.0,16.0,4.2,55.0,55.0
+5-<10 s,sOa7g-44Dag_1,A man talks as machines whir and something gets sprayed,1,8.0,16.0,8.0,23.0,27.0,4.0,0.9621,0.0,15.0,11.0,-4.0,4.0,0.5,13.0,13.0
+5-<10 s,sSMl2vc3e_k_1,A man is talking,1,0.0,5.0,5.0,28.0,33.0,5.0,0.9679,0.0,28.0,28.0,0.0,0.0,1.0,28.0,28.0
+5-<10 s,sZuuj08Gr_I_1,A woman is talking while mixing something in a dish,1,27.0,34.0,7.0,23.0,34.0,11.0,0.9466,0.6363636363636364,-4.0,0.0,4.0,4.0,1.5714285714285714,-2.0,2.0
+5-<10 s,sZuuj08Gr_I_2,Mixing something in a dish,3,147.0,155.0,8.0,198.0,208.0,10.0,0.956,0.0,51.0,53.0,2.0,2.0,1.25,52.0,52.0
+5-<10 s,sZuuj08Gr_I_3,Scooping something and putting it into a blender,1,161.0,168.0,7.0,197.0,207.0,10.0,0.9344,0.0,36.0,39.0,3.0,3.0,1.4285714285714286,37.5,37.5
+5-<10 s,sZuuj08Gr_I_4,A mixer is running,1,169.0,178.0,9.0,170.0,178.0,8.0,0.97,0.8888888888888888,1.0,0.0,-1.0,1.0,0.8888888888888888,0.5,0.5
+5-<10 s,sd7x_Vssqlw_1,A man is talking and a car is driving,6,63.0,69.0,6.0,4.0,30.0,26.0,0.8942,0.0,-59.0,-39.0,20.0,20.0,4.333333333333333,-49.0,49.0
+5-<10 s,sd_XV-ylviw_1,A urinal flushes,3,42.0,49.0,7.0,70.0,81.0,11.0,0.9724,0.0,28.0,32.0,4.0,4.0,1.5714285714285714,30.0,30.0
+5-<10 s,sd_XV-ylviw_2,A door creaks as it opens,1,229.0,236.0,7.0,118.0,127.0,9.0,0.9577,0.0,-111.0,-109.0,2.0,2.0,1.2857142857142858,-110.0,110.0
+5-<10 s,se87d6yxEOA_1,"A train is moving along, blowing its whistle",4,74.0,80.0,6.0,96.0,109.0,13.0,0.9547,0.0,22.0,29.0,7.0,7.0,2.1666666666666665,25.5,25.5
+5-<10 s,sfAvvZwdLCY_1,A toilet flushes,1,5.0,11.0,6.0,6.0,8.0,2.0,0.9608,0.3333333333333333,1.0,-3.0,-4.0,4.0,0.3333333333333333,-1.0,1.0
+5-<10 s,sfAvvZwdLCY_2,Water is flowing,1,5.0,11.0,6.0,6.0,10.0,4.0,0.96,0.6666666666666666,1.0,-1.0,-2.0,2.0,0.6666666666666666,0.0,0.0
+5-<10 s,sgAjFcKriHk_2,Voices over the sound of airplane engines,1,134.0,140.0,6.0,176.0,187.0,11.0,0.9446,0.0,42.0,47.0,5.0,5.0,1.8333333333333333,44.5,44.5
+5-<10 s,slZLHwNbbt4_1,A train is running and blowing its horn,1,178.0,184.0,6.0,18.0,33.0,15.0,0.9824,0.0,-160.0,-151.0,9.0,9.0,2.5,-155.5,155.5
+5-<10 s,slZLHwNbbt4_2,"Birds are chirping while the wind is blowing, and a train is running and blowing its horn",1,178.0,184.0,6.0,14.0,30.0,16.0,0.9039,0.0,-164.0,-154.0,10.0,10.0,2.6666666666666665,-159.0,159.0
+5-<10 s,sofxkNWaP0s_1,A plane flies in the wind as a man and child are talking,1,19.0,26.0,7.0,23.0,27.0,4.0,0.9651,0.375,4.0,1.0,-3.0,3.0,0.5714285714285714,2.5,2.5
+5-<10 s,sr1_Gfm0syI_1,Several people are applauding,3,138.0,143.0,5.0,138.0,144.0,6.0,0.9754,0.8333333333333334,0.0,1.0,1.0,1.0,1.2,0.5,0.5
+5-<10 s,sr1_Gfm0syI_2,People are cheering,3,112.0,117.0,5.0,2.0,7.0,5.0,0.9433,0.0,-110.0,-110.0,0.0,0.0,1.0,-110.0,110.0
+5-<10 s,sr1_Gfm0syI_3,A cow is mooing,1,161.0,167.0,6.0,97.0,109.0,12.0,0.9159,0.0,-64.0,-58.0,6.0,6.0,2.0,-61.0,61.0
+5-<10 s,sr1_Gfm0syI_4,"A buzzer sounds, people are cheering and applauding, and a man is speaking into a microphone",1,150.0,159.0,9.0,137.0,143.0,6.0,0.9565,0.0,-13.0,-16.0,-3.0,3.0,0.6666666666666666,-14.5,14.5
+5-<10 s,syyyCQcHSfQ_1,Someone snores as music plays in the background and a car passes by,2,37.0,42.0,5.0,0.0,7.0,7.0,0.9773,0.0,-37.0,-35.0,2.0,2.0,1.4,-36.0,36.0
+5-<10 s,t25U-v4k4ts_1,Air blows amid the noise,1,11.0,17.0,6.0,146.0,160.0,14.0,0.9137,0.0,135.0,143.0,8.0,8.0,2.3333333333333335,139.0,139.0
+5-<10 s,t25U-v4k4ts_2,"Amid the noise, something is hitting wood and bees are buzzing",1,33.0,41.0,8.0,132.0,140.0,8.0,0.9139,0.0,99.0,99.0,0.0,0.0,1.0,99.0,99.0
+5-<10 s,t69a8aRKhmc_1,A man is talking while pigeons coo,1,98.0,104.0,6.0,24.0,31.0,7.0,0.9809,0.0,-74.0,-73.0,1.0,1.0,1.1666666666666667,-73.5,73.5
+5-<10 s,t8CV69hcvF0_1,A woman is sneezing,2,125.0,134.0,9.0,12.0,24.0,12.0,0.9727,0.0,-113.0,-110.0,3.0,3.0,1.3333333333333333,-111.5,111.5
+5-<10 s,t8CV69hcvF0_2,Someone blowing their nose,1,180.0,185.0,5.0,178.0,183.0,5.0,0.9534,0.42857142857142855,-2.0,-2.0,0.0,0.0,1.0,-2.0,2.0
+5-<10 s,tDVADusiIoc_3,A man's voice comes from a radio as the wind blows,1,61.0,66.0,5.0,16.0,22.0,6.0,0.9521,0.0,-45.0,-44.0,1.0,1.0,1.2,-44.5,44.5
+5-<10 s,tDlfY3nmx1A_1,A man's voice and several people laughing,1,78.0,84.0,6.0,39.0,46.0,7.0,0.9463,0.0,-39.0,-38.0,1.0,1.0,1.1666666666666667,-38.5,38.5
+5-<10 s,tDlysoZiA1I_1,An animal calls out as birds are chirping,1,41.0,49.0,8.0,1.0,7.0,6.0,0.9612,0.0,-40.0,-42.0,-2.0,2.0,0.75,-41.0,41.0
+5-<10 s,tEE3MpBt1sg_1,A man is laughing,2,16.0,24.0,8.0,3.0,10.0,7.0,0.9694,0.0,-13.0,-14.0,-1.0,1.0,0.875,-13.5,13.5
+5-<10 s,tEE3MpBt1sg_2,A man is laughing and a machine is running,1,48.0,55.0,7.0,48.0,54.0,6.0,0.92,0.8571428571428571,0.0,-1.0,-1.0,1.0,0.8571428571428571,-0.5,0.5
+5-<10 s,tH-q8LXgHEc_1,Lots of birds are chirping and the sound of wings flapping,1,105.0,112.0,7.0,22.0,28.0,6.0,0.9397,0.0,-83.0,-84.0,-1.0,1.0,0.8571428571428571,-83.5,83.5
+5-<10 s,tH17JPjDPnc_3,"With metal clanking in the background, several goats are bleating",1,259.0,268.0,9.0,230.0,270.0,40.0,0.9587,0.225,-29.0,2.0,31.0,31.0,4.444444444444445,-13.5,13.5
+5-<10 s,tQWGZLItBXk_1,"A man is speaking, music plays, and water drains",1,63.0,70.0,7.0,104.0,117.0,13.0,0.7137,0.0,41.0,47.0,6.0,6.0,1.8571428571428572,44.0,44.0
+5-<10 s,tQWGZLItBXk_2,"A man is talking, game sounds, metal being struck in the game",1,96.0,103.0,7.0,11.0,23.0,12.0,0.9244,0.0,-85.0,-80.0,5.0,5.0,1.7142857142857142,-82.5,82.5
+5-<10 s,tQWGZLItBXk_3,Eplosions are coming from the game,2,107.0,112.0,5.0,0.0,4.0,4.0,0.9884,0.0,-107.0,-108.0,-1.0,1.0,0.8,-107.5,107.5
+5-<10 s,tZGN5a7ybxo_1,A train runs with its horn and bell sounding,1,65.0,70.0,5.0,10.0,14.0,4.0,0.9226,0.0,-55.0,-56.0,-1.0,1.0,0.8,-55.5,55.5
+5-<10 s,tZGN5a7ybxo_2,A crossing alarm is ringing and cars are driving by,1,20.0,27.0,7.0,4.0,13.0,9.0,0.9087,0.0,-16.0,-14.0,2.0,2.0,1.2857142857142858,-15.0,15.0
+5-<10 s,tZGN5a7ybxo_3,A train is running with horn sounding,2,85.0,93.0,8.0,8.0,15.0,7.0,0.9243,0.0,-77.0,-78.0,-1.0,1.0,0.875,-77.5,77.5
+5-<10 s,ti_DFTC-5vU_2,"Cicadas are singing, a duck quacks, and several people laugh and talk",1,34.0,40.0,6.0,2.0,4.0,2.0,0.8918,0.0,-32.0,-36.0,-4.0,4.0,0.3333333333333333,-34.0,34.0
+5-<10 s,tvP4E1r7yk8_1,"A train is passing, a whistle is blowing, and a crossing bell is ringing",1,1.0,10.0,9.0,44.0,53.0,9.0,0.9744,0.0,43.0,43.0,0.0,0.0,1.0,43.0,43.0
+5-<10 s,uC9dtII1KDI_1,"Wind is blowing, birds are chirping, and an animal is walking",2,7.0,15.0,8.0,11.0,20.0,9.0,0.9268,0.3076923076923077,4.0,5.0,1.0,1.0,1.125,4.5,4.5
+5-<10 s,uCuo8zAkTvE_1,Thunder rumbling amid rain falling and wind blowing,1,45.0,50.0,5.0,91.0,97.0,6.0,0.904,0.0,46.0,47.0,1.0,1.0,1.2,46.5,46.5
+5-<10 s,uFoga8sHpiw_1,Someone whistles softly,3,87.0,94.0,7.0,85.0,93.0,8.0,0.9738,0.6666666666666666,-2.0,-1.0,1.0,1.0,1.1428571428571428,-1.5,1.5
+5-<10 s,uJV8NDaHqqk_1,Birds chirping over the sound of insects buzzing,1,0.0,6.0,6.0,47.0,76.0,29.0,0.9475,0.0,47.0,70.0,23.0,23.0,4.833333333333333,58.5,58.5
+5-<10 s,uK5doE8g_nY_2,Helicopter rotors are spinning,1,25.0,31.0,6.0,42.0,103.0,61.0,0.9457,0.0,17.0,72.0,55.0,55.0,10.166666666666666,44.5,44.5
+5-<10 s,uXxVebHsGZ8_1,A clock ticks and a bell rings,1,119.0,125.0,6.0,171.0,196.0,25.0,0.9473,0.0,52.0,71.0,19.0,19.0,4.166666666666667,61.5,61.5
+5-<10 s,uYT5gxnyMWM_1,Someone sprayes,1,52.0,57.0,5.0,52.0,55.0,3.0,0.9329,0.6,0.0,-2.0,-2.0,2.0,0.6,-1.0,1.0
+5-<10 s,uYT5gxnyMWM_2,A women screams loudly,1,19.0,26.0,7.0,20.0,24.0,4.0,0.9564,0.5714285714285714,1.0,-2.0,-3.0,3.0,0.5714285714285714,-0.5,0.5
+5-<10 s,uiItxDsDMFI_1,Someone is walking on dirt and fallen leaves,1,0.0,7.0,7.0,30.0,46.0,16.0,0.9167,0.0,30.0,39.0,9.0,9.0,2.2857142857142856,34.5,34.5
+5-<10 s,uiItxDsDMFI_2,Someone is sawing wood,2,30.0,35.0,5.0,105.0,111.0,6.0,0.8882,0.0,75.0,76.0,1.0,1.0,1.2,75.5,75.5
+5-<10 s,uqFtmnhuqA8_1,A machine is running and chimes are sounding,1,26.0,33.0,7.0,1.0,5.0,4.0,0.96,0.0,-25.0,-28.0,-3.0,3.0,0.5714285714285714,-26.5,26.5
+5-<10 s,uzQnlJXBbOM_1,A man's voice is speaking,1,31.0,38.0,7.0,114.0,130.0,16.0,0.9554,0.0,83.0,92.0,9.0,9.0,2.2857142857142856,87.5,87.5
+5-<10 s,uzQnlJXBbOM_3,A ringtone,2,91.0,98.0,7.0,38.0,55.0,17.0,0.9565,0.0,-53.0,-43.0,10.0,10.0,2.4285714285714284,-48.0,48.0
+5-<10 s,v0x1odnXtP0_2,Mouse clicks echo in the background,1,124.0,131.0,7.0,78.0,116.0,38.0,0.9542,0.0,-46.0,-15.0,31.0,31.0,5.428571428571429,-30.5,30.5
+5-<10 s,v8vMLTp5Dww_1,"A man is speaking inside a moving car while rain falls outside, with wind and a motorcycle passing by",1,44.0,52.0,8.0,4.0,23.0,19.0,0.9558,0.0,-40.0,-29.0,11.0,11.0,2.375,-34.5,34.5
+5-<10 s,vSeGhaZt-aI_1,Music is playing,1,0.0,6.0,6.0,0.0,4.0,4.0,0.9901,0.6666666666666666,0.0,-2.0,-2.0,2.0,0.6666666666666666,-1.0,1.0
+5-<10 s,vW4x7S1VfQc_2,Someone is grinding pepper,1,79.0,86.0,7.0,73.0,84.0,11.0,0.9209,0.38461538461538464,-6.0,-2.0,4.0,4.0,1.5714285714285714,-4.0,4.0
+5-<10 s,vW4x7S1VfQc_4,A woman is talking and music is playing,1,218.0,224.0,6.0,6.0,18.0,12.0,0.956,0.0,-212.0,-206.0,6.0,6.0,2.0,-209.0,209.0
+5-<10 s,vZAqdHZ81yA_1,Some kind of machine is making noise,1,169.0,174.0,5.0,237.0,258.0,21.0,0.9772,0.0,68.0,84.0,16.0,16.0,4.2,76.0,76.0
+5-<10 s,vbr9mHKc8WM_1,An engine hums as water flows,1,63.0,70.0,7.0,8.0,18.0,10.0,0.9073,0.0,-55.0,-52.0,3.0,3.0,1.4285714285714286,-53.5,53.5
+5-<10 s,vcmWS_mvti8_1,Music is playing over a man talking and sound effects along with a bomb blast,2,41.0,50.0,9.0,106.0,119.0,13.0,0.8915,0.0,65.0,69.0,4.0,4.0,1.4444444444444444,67.0,67.0
+5-<10 s,vdoxuJn9lTc_1,A woman is speaking,3,2.0,7.0,5.0,13.0,18.0,5.0,0.9542,0.0,11.0,11.0,0.0,0.0,1.0,11.0,11.0
+5-<10 s,vh30P49Po6s_2,A man is talking,1,0.0,5.0,5.0,0.0,4.0,4.0,0.9927,0.8,0.0,-1.0,-1.0,1.0,0.8,-0.5,0.5
+5-<10 s,vlJS7LN2XyM_1,A clock is ringing,1,55.0,64.0,9.0,12.0,23.0,11.0,0.9585,0.0,-43.0,-41.0,2.0,2.0,1.2222222222222223,-42.0,42.0
+5-<10 s,vlS6YMeWAPo_3,Someone whistles,1,59.0,64.0,5.0,3.0,5.0,2.0,0.9709,0.0,-56.0,-59.0,-3.0,3.0,0.4,-57.5,57.5
+5-<10 s,vveS8HT7Uog_1,Something is being scraped,3,74.0,82.0,8.0,133.0,145.0,12.0,0.9503,0.0,59.0,63.0,4.0,4.0,1.5,61.0,61.0
+5-<10 s,vzxHnu-SFEw_1,"Several people talking, a woman's voice and the sound of scissors being used",1,46.0,51.0,5.0,94.0,148.0,54.0,0.923,0.0,48.0,97.0,49.0,49.0,10.8,72.5,72.5
+5-<10 s,w0xsN8_X18Y_1,Music and car sounds play,4,30.0,38.0,8.0,0.0,4.0,4.0,0.9867,0.0,-30.0,-34.0,-4.0,4.0,0.5,-32.0,32.0
+5-<10 s,w0xsN8_X18Y_2,Rain falls and a man talks as music plays,2,42.0,47.0,5.0,1.0,8.0,7.0,0.9299,0.0,-41.0,-39.0,2.0,2.0,1.4,-40.0,40.0
+5-<10 s,w2bYrCVLT60_1,A man is talking,2,84.0,89.0,5.0,12.0,42.0,30.0,0.9622,0.0,-72.0,-47.0,25.0,25.0,6.0,-59.5,59.5
+5-<10 s,w2bYrCVLT60_2,A man is talking while ducks are quacking,2,84.0,89.0,5.0,3.0,13.0,10.0,0.9589,0.0,-81.0,-76.0,5.0,5.0,2.0,-78.5,78.5
+5-<10 s,w2htir_si7g_2,Music is playing,1,185.0,193.0,8.0,2.0,16.0,14.0,0.9261,0.0,-183.0,-177.0,6.0,6.0,1.75,-180.0,180.0
+5-<10 s,w2htir_si7g_3,Someone is whistling,1,29.0,37.0,8.0,32.0,51.0,19.0,0.9652,0.22727272727272727,3.0,14.0,11.0,11.0,2.375,8.5,8.5
+5-<10 s,w5W_5Kqtc8E_3,People cheer,1,108.0,113.0,5.0,100.0,120.0,20.0,0.9037,0.25,-8.0,7.0,15.0,15.0,4.0,-0.5,0.5
+5-<10 s,w6RTHR6AeAg_3,Some animal is making a noise,2,45.0,53.0,8.0,10.0,18.0,8.0,0.9562,0.0,-35.0,-35.0,0.0,0.0,1.0,-35.0,35.0
+5-<10 s,wDVMhEdTiVw_1,Someone is playing a flute,2,6.0,11.0,5.0,5.0,11.0,6.0,0.9829,0.8333333333333334,-1.0,0.0,1.0,1.0,1.2,-0.5,0.5
+5-<10 s,wDVMhEdTiVw_3,Someone is moving in the water,2,32.0,40.0,8.0,32.0,39.0,7.0,0.9727,0.875,0.0,-1.0,-1.0,1.0,0.875,-0.5,0.5
+5-<10 s,wIJK3-5y0kA_1,A baby's voice,2,11.0,16.0,5.0,8.0,20.0,12.0,0.9685,0.4166666666666667,-3.0,4.0,7.0,7.0,2.4,0.5,0.5
+5-<10 s,weDbePuc-Xc_2,Music is playing and someone is laughing,1,20.0,27.0,7.0,73.0,81.0,8.0,0.9142,0.0,53.0,54.0,1.0,1.0,1.1428571428571428,53.5,53.5
+5-<10 s,weDbePuc-Xc_5,Insects are flying and a bell is ringing,1,73.0,82.0,9.0,70.0,80.0,10.0,0.8014,0.5833333333333334,-3.0,-2.0,1.0,1.0,1.1111111111111112,-2.5,2.5
+5-<10 s,wfHeoPDLMaM_1,Music is playing,1,0.0,8.0,8.0,0.0,16.0,16.0,0.9359,0.5,0.0,8.0,8.0,8.0,2.0,4.0,4.0
+5-<10 s,wnNNcxAPwGQ_2,A man's voice and applause over an engine running,1,92.0,101.0,9.0,5.0,10.0,5.0,0.9428,0.0,-87.0,-91.0,-4.0,4.0,0.5555555555555556,-89.0,89.0
+5-<10 s,wnpJndXuxLc_1,A train horn is sounding,3,32.0,40.0,8.0,64.0,73.0,9.0,0.966,0.0,32.0,33.0,1.0,1.0,1.125,32.5,32.5
+5-<10 s,wqugJOvBkhY_1,Music plays and a baby cries,1,5.0,11.0,6.0,0.0,5.0,5.0,0.9161,0.0,-5.0,-6.0,-1.0,1.0,0.8333333333333334,-5.5,5.5
+5-<10 s,wsHBIgzs9Fs_2,Voices carry over the engine noise,3,119.0,126.0,7.0,3.0,19.0,16.0,0.9042,0.0,-116.0,-107.0,9.0,9.0,2.2857142857142856,-111.5,111.5
+5-<10 s,wulOEFdECWs_1,Rain falls as thunder rumbles,1,6.0,15.0,9.0,13.0,16.0,3.0,0.9189,0.2,7.0,1.0,-6.0,6.0,0.3333333333333333,4.0,4.0
+5-<10 s,wwyfGO2J__4_1,People are talking and a man is speaking into a microphone,1,102.0,107.0,5.0,0.0,4.0,4.0,0.9834,0.0,-102.0,-103.0,-1.0,1.0,0.8,-102.5,102.5
+5-<10 s,wwyfGO2J__4_2,People are applauding,1,88.0,94.0,6.0,87.0,92.0,5.0,0.9643,0.5714285714285714,-1.0,-2.0,-1.0,1.0,0.8333333333333334,-1.5,1.5
+5-<10 s,wzXPRI7eXOM_1,"A man's voice, an engine noise",2,80.0,85.0,5.0,80.0,85.0,5.0,0.9625,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+5-<10 s,x4a9YGIw4ok_1,Pressing the lever sends water rushing through the toilet,2,51.0,60.0,9.0,74.0,83.0,9.0,0.9616,0.0,23.0,23.0,0.0,0.0,1.0,23.0,23.0
+5-<10 s,x6ijhqRY38s_1,A man grinds pepper as he speaks,1,101.0,109.0,8.0,46.0,62.0,16.0,0.9071,0.0,-55.0,-47.0,8.0,8.0,2.0,-51.0,51.0
+5-<10 s,x6ijhqRY38s_3,Someone is cutting something with a kitchen knife,1,208.0,215.0,7.0,173.0,184.0,11.0,0.9264,0.0,-35.0,-31.0,4.0,4.0,1.5714285714285714,-33.0,33.0
+5-<10 s,xNMovAf3o50_1,Rain falls and thunder rumbles,2,0.0,6.0,6.0,0.0,4.0,4.0,0.987,0.6666666666666666,0.0,-2.0,-2.0,2.0,0.6666666666666666,-1.0,1.0
+5-<10 s,xSKJGCItUWE_1,Voices over a motor running,2,0.0,6.0,6.0,0.0,5.0,5.0,0.9916,0.8333333333333334,0.0,-1.0,-1.0,1.0,0.8333333333333334,-0.5,0.5
+5-<10 s,xSN_cBFt-PI_1,A clock is ticking and chiming,2,74.0,79.0,5.0,25.0,35.0,10.0,0.9209,0.0,-49.0,-44.0,5.0,5.0,2.0,-46.5,46.5
+5-<10 s,xVzetIIzS9c_1,Siren amid cars passing,1,23.0,31.0,8.0,0.0,51.0,51.0,0.822,0.1568627450980392,-23.0,20.0,43.0,43.0,6.375,-1.5,1.5
+5-<10 s,xZepNM9qcRA_1,A man is speaking while a motorcycle engine runs,1,0.0,6.0,6.0,48.0,66.0,18.0,0.9553,0.0,48.0,60.0,12.0,12.0,3.0,54.0,54.0
+5-<10 s,x_l2PIWyXaM_3,A child talks as birds chirp,1,51.0,57.0,6.0,223.0,245.0,22.0,0.7978,0.0,172.0,188.0,16.0,16.0,3.6666666666666665,180.0,180.0
+5-<10 s,xmiUIOhtZyQ_1,Burping sounds are present amid background noise,2,13.0,18.0,5.0,71.0,81.0,10.0,0.9,0.0,58.0,63.0,5.0,5.0,2.0,60.5,60.5
+5-<10 s,xmiUIOhtZyQ_2,Someone is singing,1,74.0,81.0,7.0,73.0,82.0,9.0,0.9573,0.7777777777777778,-1.0,1.0,2.0,2.0,1.2857142857142858,0.0,0.0
+5-<10 s,xtWeJ56-U-g_2,Someone is typing,1,80.0,86.0,6.0,45.0,52.0,7.0,0.9697,0.0,-35.0,-34.0,1.0,1.0,1.1666666666666667,-34.5,34.5
+5-<10 s,xx3yKzrSOBI_2,"As a man talks, a door creaks open",2,236.0,243.0,7.0,115.0,124.0,9.0,0.9407,0.0,-121.0,-119.0,2.0,2.0,1.2857142857142858,-120.0,120.0
+5-<10 s,y2ZBGpgbhHM_1,Dogs and birds are making noise,1,74.0,81.0,7.0,0.0,9.0,9.0,0.9571,0.0,-74.0,-72.0,2.0,2.0,1.2857142857142858,-73.0,73.0
+5-<10 s,y2ZBGpgbhHM_2,A man is talking,1,11.0,16.0,5.0,3.0,23.0,20.0,0.9572,0.25,-8.0,7.0,15.0,15.0,4.0,-0.5,0.5
+5-<10 s,yDoT73BWsdA_1,The sound of a car hitting the breaks as it drives by over the sound of laughter,1,178.0,184.0,6.0,178.0,186.0,8.0,0.9717,0.75,0.0,2.0,2.0,2.0,1.3333333333333333,1.0,1.0
+5-<10 s,yHeVV-xeOxQ_2,Milking a cow,1,79.0,88.0,9.0,136.0,147.0,11.0,0.9411,0.0,57.0,59.0,2.0,2.0,1.2222222222222223,58.0,58.0
+5-<10 s,yLCORCnd35Q_1,An airplane flies overhead while someone plays an instrument,1,83.0,90.0,7.0,0.0,13.0,13.0,0.9575,0.0,-83.0,-77.0,6.0,6.0,1.8571428571428572,-80.0,80.0
+5-<10 s,yRx9txMcBl0_2,A car engine and brakes,1,45.0,51.0,6.0,41.0,48.0,7.0,0.9514,0.3,-4.0,-3.0,1.0,1.0,1.1666666666666667,-3.5,3.5
+5-<10 s,yRx9txMcBl0_4,Engine noise blends with something crashing into an object,1,195.0,200.0,5.0,76.0,86.0,10.0,0.8848,0.0,-119.0,-114.0,5.0,5.0,2.0,-116.5,116.5
+5-<10 s,yW6FWLSLkx4_2,Music is playing,1,60.0,66.0,6.0,84.0,97.0,13.0,0.9537,0.0,24.0,31.0,7.0,7.0,2.1666666666666665,27.5,27.5
+5-<10 s,yaln9y8I7ms_2,Water flows,1,231.0,240.0,9.0,229.0,239.0,10.0,0.9684,0.7272727272727273,-2.0,-1.0,1.0,1.0,1.1111111111111112,-1.5,1.5
+5-<10 s,yiUDYRSJpJI_1,A car speeds by and explosions echo,1,178.0,186.0,8.0,44.0,89.0,45.0,0.9338,0.0,-134.0,-97.0,37.0,37.0,5.625,-115.5,115.5
+5-<10 s,yks4cLgIDMc_1,"While birds are chirping, a man and children talk, a car door shuts in the background, and the engine starts",1,9.0,14.0,5.0,191.0,214.0,23.0,0.8541,0.0,182.0,200.0,18.0,18.0,4.6,191.0,191.0
+5-<10 s,yks4cLgIDMc_2,"With the river flowing, a kid is shouting",1,94.0,103.0,9.0,212.0,226.0,14.0,0.8221,0.0,118.0,123.0,5.0,5.0,1.5555555555555556,120.5,120.5
+5-<10 s,yks4cLgIDMc_4,Game sounds and other voices,1,281.0,290.0,9.0,175.0,185.0,10.0,0.968,0.0,-106.0,-105.0,1.0,1.0,1.1111111111111112,-105.5,105.5
+5-<10 s,z4VCMzobZbI_1,A mixer is running,2,67.0,74.0,7.0,117.0,143.0,26.0,0.9564,0.0,50.0,69.0,19.0,19.0,3.7142857142857144,59.5,59.5
+5-<10 s,z4VCMzobZbI_2,Something is being put into a heated pot and left to simmer,1,100.0,108.0,8.0,54.0,62.0,8.0,0.9344,0.0,-46.0,-46.0,0.0,0.0,1.0,-46.0,46.0
+5-<10 s,z4uELRI6p08_1,Someone is laughing,2,32.0,37.0,5.0,4.0,11.0,7.0,0.9622,0.0,-28.0,-26.0,2.0,2.0,1.4,-27.0,27.0
+5-<10 s,z5iUE5h0EPs_1,birds and goats are making noise,1,56.0,61.0,5.0,0.0,1.0,1.0,0.9834,0.0,-56.0,-60.0,-4.0,4.0,0.2,-58.0,58.0
+5-<10 s,z9-3K1PFMjw_2,A warning beeps,1,53.0,60.0,7.0,6.0,8.0,2.0,0.9568,0.0,-47.0,-52.0,-5.0,5.0,0.2857142857142857,-49.5,49.5
+5-<10 s,zF8yoL0rkbI_2,Horns honk while cars drive past and the wind blows,1,45.0,51.0,6.0,93.0,106.0,13.0,0.9042,0.0,48.0,55.0,7.0,7.0,2.1666666666666665,51.5,51.5
+5-<10 s,zU-oKUEckKo_1,A horn blows amid vehicle noise,1,11.0,17.0,6.0,47.0,64.0,17.0,0.9483,0.0,36.0,47.0,11.0,11.0,2.8333333333333335,41.5,41.5
+5-<10 s,zY3icUyMdh8_1,"Dogs barking, a bus engine rumbles",1,19.0,26.0,7.0,167.0,182.0,15.0,0.8898,0.0,148.0,156.0,8.0,8.0,2.142857142857143,152.0,152.0
+5-<10 s,zY3icUyMdh8_3,Several people are talking inside a moving bus,1,131.0,136.0,5.0,134.0,297.0,163.0,0.8362,0.012048192771084338,3.0,161.0,158.0,158.0,32.6,82.0,82.0
+5-<10 s,zgUgkpk78xU_1,A train whistle sounds while a crossing bell is ringing,2,24.0,30.0,6.0,19.0,31.0,12.0,0.9746,0.5,-5.0,1.0,6.0,6.0,2.0,-2.0,2.0
+5-<10 s,zgUgkpk78xU_2,A train whistle and a train moving while a crossing bell is ringing,1,63.0,72.0,9.0,22.0,31.0,9.0,0.9708,0.0,-41.0,-41.0,0.0,0.0,1.0,-41.0,41.0
+5-<10 s,zl3OnWjr3Y4_3,"As a man talks, wood creaks",1,225.0,232.0,7.0,197.0,208.0,11.0,0.957,0.0,-28.0,-24.0,4.0,4.0,1.5714285714285714,-26.0,26.0
+5-<10 s,zsLxS-uLJTw_2,A train blows its horn and passes as someone talks,2,20.0,25.0,5.0,19.0,29.0,10.0,0.9489,0.5,-1.0,4.0,5.0,5.0,2.0,1.5,1.5
+5-<10 s,zvmXKyAFq80_3,A car drives,1,57.0,62.0,5.0,0.0,11.0,11.0,0.9493,0.0,-57.0,-51.0,6.0,6.0,2.2,-54.0,54.0
+5-<10 s,zwOBqeFTgiU_1,Two babies are crying while a woman is speaking,1,40.0,45.0,5.0,57.0,66.0,9.0,0.9566,0.0,17.0,21.0,4.0,4.0,1.8,19.0,19.0
+10-<20 s,rwT__ERCUno_1,Metal tools clanging together,1,64.0,80.0,16.0,69.0,77.0,8.0,0.8987,0.5,5.0,-3.0,-8.0,8.0,0.5,1.0,1.0
+10-<20 s,rwb6PSAee5Y_2,A toilet is flushing,2,59.0,71.0,12.0,61.0,64.0,3.0,0.9716,0.25,2.0,-7.0,-9.0,9.0,0.25,-2.5,2.5
+10-<20 s,rwtmaKiCcQU_1,Engines are running and something is being sprayed,1,59.0,69.0,10.0,2.0,7.0,5.0,0.9675,0.0,-57.0,-62.0,-5.0,5.0,0.5,-59.5,59.5
+10-<20 s,s3cT_DAj31g_3,"A man, a woman, and a child are talking and eating candy",1,64.0,75.0,11.0,7.0,12.0,5.0,0.9311,0.0,-57.0,-63.0,-6.0,6.0,0.45454545454545453,-60.0,60.0
+10-<20 s,s7knHCFW82w_1,A man is speaking while a train bell rings,1,0.0,13.0,13.0,2.0,17.0,15.0,0.9934,0.6470588235294118,2.0,4.0,2.0,2.0,1.1538461538461537,3.0,3.0
+10-<20 s,s7knHCFW82w_2,"A train is moving along, sounding its horn",1,70.0,89.0,19.0,16.0,48.0,32.0,0.9811,0.0,-54.0,-41.0,13.0,13.0,1.6842105263157894,-47.5,47.5
+10-<20 s,sIXTftIuUgw_3,Someone is whistling,1,85.0,102.0,17.0,84.0,94.0,10.0,0.9582,0.5,-1.0,-8.0,-7.0,7.0,0.5882352941176471,-4.5,4.5
+10-<20 s,sSMl2vc3e_k_1,A man is talking,1,93.0,105.0,12.0,28.0,33.0,5.0,0.9679,0.0,-65.0,-72.0,-7.0,7.0,0.4166666666666667,-68.5,68.5
+10-<20 s,sYITalLZjj4_1,Sound effects are playing,1,0.0,11.0,11.0,0.0,9.0,9.0,0.9929,0.8181818181818182,0.0,-2.0,-2.0,2.0,0.8181818181818182,-1.0,1.0
+10-<20 s,sZuuj08Gr_I_1,A woman is talking while mixing something in a dish,1,85.0,95.0,10.0,23.0,34.0,11.0,0.9466,0.0,-62.0,-61.0,1.0,1.0,1.1,-61.5,61.5
+10-<20 s,sZuuj08Gr_I_2,Mixing something in a dish,1,84.0,95.0,11.0,198.0,208.0,10.0,0.956,0.0,114.0,113.0,-1.0,1.0,0.9090909090909091,113.5,113.5
+10-<20 s,sZuuj08Gr_I_5,Sifting something with a strainer,1,194.0,206.0,12.0,190.0,201.0,11.0,0.949,0.4375,-4.0,-5.0,-1.0,1.0,0.9166666666666666,-4.5,4.5
+10-<20 s,sd_XV-ylviw_1,A urinal flushes,8,73.0,84.0,11.0,70.0,81.0,11.0,0.9724,0.5714285714285714,-3.0,-3.0,0.0,0.0,1.0,-3.0,3.0
+10-<20 s,se87d6yxEOA_1,"A train is moving along, blowing its whistle",1,12.0,22.0,10.0,96.0,109.0,13.0,0.9547,0.0,84.0,87.0,3.0,3.0,1.3,85.5,85.5
+10-<20 s,se87d6yxEOA_3,Someone is speaking while music is playing,1,190.0,200.0,10.0,0.0,4.0,4.0,0.9872,0.0,-190.0,-196.0,-6.0,6.0,0.4,-193.0,193.0
+10-<20 s,se87d6yxEOA_4,A sound like steam is rising,1,241.0,255.0,14.0,36.0,53.0,17.0,0.898,0.0,-205.0,-202.0,3.0,3.0,1.2142857142857142,-203.5,203.5
+10-<20 s,sfAvvZwdLCY_1,A toilet flushes,1,20.0,30.0,10.0,6.0,8.0,2.0,0.9608,0.0,-14.0,-22.0,-8.0,8.0,0.2,-18.0,18.0
+10-<20 s,sfAvvZwdLCY_2,Water is flowing,2,45.0,59.0,14.0,6.0,10.0,4.0,0.96,0.0,-39.0,-49.0,-10.0,10.0,0.2857142857142857,-44.0,44.0
+10-<20 s,sgAjFcKriHk_1,The roar of the airplane engines,1,223.0,241.0,18.0,82.0,136.0,54.0,0.9164,0.0,-141.0,-105.0,36.0,36.0,3.0,-123.0,123.0
+10-<20 s,smGI3C1N_Zc_1,Water is running,4,96.0,113.0,17.0,98.0,108.0,10.0,0.9621,0.5882352941176471,2.0,-5.0,-7.0,7.0,0.5882352941176471,-1.5,1.5
+10-<20 s,sxIvBMSavMQ_1,Music is playing,1,0.0,16.0,16.0,0.0,13.0,13.0,0.9962,0.8125,0.0,-3.0,-3.0,3.0,0.8125,-1.5,1.5
+10-<20 s,t4WCFbE0A50_1,A cow and an animal are making sounds as the wind blows,1,24.0,35.0,11.0,41.0,45.0,4.0,0.8995,0.0,17.0,10.0,-7.0,7.0,0.36363636363636365,13.5,13.5
+10-<20 s,tDlfY3nmx1A_1,A man's voice and several people laughing,1,156.0,167.0,11.0,39.0,46.0,7.0,0.9463,0.0,-117.0,-121.0,-4.0,4.0,0.6363636363636364,-119.0,119.0
+10-<20 s,tDlfY3nmx1A_2,A man's voice and applause,1,152.0,167.0,15.0,152.0,159.0,7.0,0.9734,0.4666666666666667,0.0,-8.0,-8.0,8.0,0.4666666666666667,-4.0,4.0
+10-<20 s,tDlysoZiA1I_1,An animal calls out as birds are chirping,1,25.0,38.0,13.0,1.0,7.0,6.0,0.9612,0.0,-24.0,-31.0,-7.0,7.0,0.46153846153846156,-27.5,27.5
+10-<20 s,tEE3MpBt1sg_1,A man is laughing,1,0.0,14.0,14.0,3.0,10.0,7.0,0.9694,0.5,3.0,-4.0,-7.0,7.0,0.5,-0.5,0.5
+10-<20 s,tH17JPjDPnc_1,Many people are talking as metal scrapes together,1,60.0,73.0,13.0,245.0,271.0,26.0,0.9545,0.0,185.0,198.0,13.0,13.0,2.0,191.5,191.5
+10-<20 s,tRJVUSdMjQI_1,Music is playing,1,202.0,219.0,17.0,144.0,183.0,39.0,0.8893,0.0,-58.0,-36.0,22.0,22.0,2.2941176470588234,-47.0,47.0
+10-<20 s,tezvROoo4bs_1,Music is playing and engines are running,1,1.0,15.0,14.0,2.0,18.0,16.0,0.9616,0.7647058823529411,1.0,3.0,2.0,2.0,1.1428571428571428,2.0,2.0
+10-<20 s,tezvROoo4bs_2,An engine is running,2,48.0,63.0,15.0,63.0,87.0,24.0,0.9506,0.0,15.0,24.0,9.0,9.0,1.6,19.5,19.5
+10-<20 s,tvP4E1r7yk8_2,"Something is operating, wind is blowing, and two men are talking",1,79.0,90.0,11.0,81.0,89.0,8.0,0.9738,0.7272727272727273,2.0,-1.0,-3.0,3.0,0.7272727272727273,0.5,0.5
+10-<20 s,uGS7O46tlSo_1,A man talks as the wind blows,1,5.0,19.0,14.0,4.0,18.0,14.0,0.948,0.8666666666666667,-1.0,-1.0,0.0,0.0,1.0,-1.0,1.0
+10-<20 s,uJV8NDaHqqk_1,Birds chirping over the sound of insects buzzing,5,123.0,134.0,11.0,47.0,76.0,29.0,0.9475,0.0,-76.0,-58.0,18.0,18.0,2.6363636363636362,-67.0,67.0
+10-<20 s,uK5doE8g_nY_1,Helicopter engines are roaring,3,47.0,57.0,10.0,44.0,99.0,55.0,0.9238,0.18181818181818182,-3.0,42.0,45.0,45.0,5.5,19.5,19.5
+10-<20 s,uP_Dn2BFTHk_1,"A woman's voice, a baby's voice, and a man's voice",1,102.0,120.0,18.0,137.0,143.0,6.0,0.9344,0.0,35.0,23.0,-12.0,12.0,0.3333333333333333,29.0,29.0
+10-<20 s,uYT5gxnyMWM_1,Someone sprayes,1,16.0,32.0,16.0,52.0,55.0,3.0,0.9329,0.0,36.0,23.0,-13.0,13.0,0.1875,29.5,29.5
+10-<20 s,ucQikcv96gM_1,A man is speaking while birds nearby are chirping and pecking at food,4,131.0,144.0,13.0,134.0,144.0,10.0,0.9487,0.7692307692307693,3.0,0.0,-3.0,3.0,0.7692307692307693,1.5,1.5
+10-<20 s,uiItxDsDMFI_2,Someone is sawing wood,1,54.0,71.0,17.0,105.0,111.0,6.0,0.8882,0.0,51.0,40.0,-11.0,11.0,0.35294117647058826,45.5,45.5
+10-<20 s,uiNuH51lzVY_1,A man is speaking somewhere with water flowing nearby,1,108.0,123.0,15.0,0.0,14.0,14.0,0.9818,0.0,-108.0,-109.0,-1.0,1.0,0.9333333333333333,-108.5,108.5
+10-<20 s,uzQnlJXBbOM_1,A man's voice is speaking,3,118.0,134.0,16.0,114.0,130.0,16.0,0.9554,0.6,-4.0,-4.0,0.0,0.0,1.0,-4.0,4.0
+10-<20 s,uzQnlJXBbOM_2,Some electronic sounds,1,16.0,30.0,14.0,46.0,52.0,6.0,0.9745,0.0,30.0,22.0,-8.0,8.0,0.42857142857142855,26.0,26.0
+10-<20 s,uzQnlJXBbOM_3,A ringtone,1,39.0,53.0,14.0,38.0,55.0,17.0,0.9565,0.8235294117647058,-1.0,2.0,3.0,3.0,1.2142857142857142,0.5,0.5
+10-<20 s,v0x1odnXtP0_2,Mouse clicks echo in the background,1,85.0,98.0,13.0,78.0,116.0,38.0,0.9542,0.34210526315789475,-7.0,18.0,25.0,25.0,2.923076923076923,5.5,5.5
+10-<20 s,v5cSxLaHADY_2,Paper rustles softly,1,44.0,62.0,18.0,0.0,38.0,38.0,0.9693,0.0,-44.0,-24.0,20.0,20.0,2.111111111111111,-34.0,34.0
+10-<20 s,v7Pz4dWmggg_1,Someone talk as a baby cries,2,26.0,45.0,19.0,1.0,5.0,4.0,0.9558,0.0,-25.0,-40.0,-15.0,15.0,0.21052631578947367,-32.5,32.5
+10-<20 s,v8vMLTp5Dww_1,"A man is speaking inside a moving car while rain falls outside, with wind and a motorcycle passing by",1,114.0,126.0,12.0,4.0,23.0,19.0,0.9558,0.0,-110.0,-103.0,7.0,7.0,1.5833333333333333,-106.5,106.5
+10-<20 s,vSeGhaZt-aI_1,Music is playing,1,202.0,217.0,15.0,0.0,4.0,4.0,0.9901,0.0,-202.0,-213.0,-11.0,11.0,0.26666666666666666,-207.5,207.5
+10-<20 s,vSeGhaZt-aI_2,A man is speaking while water flows in the background,1,44.0,59.0,15.0,0.0,5.0,5.0,0.9495,0.0,-44.0,-54.0,-10.0,10.0,0.3333333333333333,-49.0,49.0
+10-<20 s,vW4x7S1VfQc_1,A woman is talking as she sprinkles something,1,45.0,61.0,16.0,73.0,87.0,14.0,0.9386,0.0,28.0,26.0,-2.0,2.0,0.875,27.0,27.0
+10-<20 s,vbr9mHKc8WM_1,An engine hums as water flows,1,5.0,18.0,13.0,8.0,18.0,10.0,0.9073,0.7692307692307693,3.0,0.0,-3.0,3.0,0.7692307692307693,1.5,1.5
+10-<20 s,vddP56-ogds_1,A man is talking while a vehicle is moving and birds are singing,1,0.0,11.0,11.0,0.0,12.0,12.0,0.949,0.9166666666666666,0.0,1.0,1.0,1.0,1.0909090909090908,0.5,0.5
+10-<20 s,vdoxuJn9lTc_1,A woman is speaking,1,58.0,68.0,10.0,13.0,18.0,5.0,0.9542,0.0,-45.0,-50.0,-5.0,5.0,0.5,-47.5,47.5
+10-<20 s,viuTg1M-dqg_3,A woman's voice rises above the mechanical noise,1,165.0,178.0,13.0,43.0,49.0,6.0,0.9485,0.0,-122.0,-129.0,-7.0,7.0,0.46153846153846156,-125.5,125.5
+10-<20 s,vlJS7LN2XyM_1,A clock is ringing,1,12.0,23.0,11.0,12.0,23.0,11.0,0.9585,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+10-<20 s,vveS8HT7Uog_1,Something is being scraped,1,132.0,145.0,13.0,133.0,145.0,12.0,0.9503,0.9230769230769231,1.0,0.0,-1.0,1.0,0.9230769230769231,0.5,0.5
+10-<20 s,vzceMbkl_Wc_2,Water is running from a faucet as a man talks,1,167.0,184.0,17.0,176.0,184.0,8.0,0.9723,0.47058823529411764,9.0,0.0,-9.0,9.0,0.47058823529411764,4.5,4.5
+10-<20 s,w2htir_si7g_1,Someone is whistling and another person is singing,1,147.0,160.0,13.0,126.0,139.0,13.0,0.9325,0.0,-21.0,-21.0,0.0,0.0,1.0,-21.0,21.0
+10-<20 s,w2htir_si7g_3,Someone is whistling,1,42.0,53.0,11.0,32.0,51.0,19.0,0.9652,0.42857142857142855,-10.0,-2.0,8.0,8.0,1.7272727272727273,-6.0,6.0
+10-<20 s,w5W_5Kqtc8E_4,An airplane is flying,1,114.0,124.0,10.0,0.0,111.0,111.0,0.8257,0.0,-114.0,-13.0,101.0,101.0,11.1,-63.5,63.5
+10-<20 s,w6RTHR6AeAg_2,An owl is hooting,1,28.0,45.0,17.0,14.0,19.0,5.0,0.9486,0.0,-14.0,-26.0,-12.0,12.0,0.29411764705882354,-20.0,20.0
+10-<20 s,wDVMhEdTiVw_2,"Gunfire, birds are chirping",1,140.0,151.0,11.0,62.0,74.0,12.0,0.9587,0.0,-78.0,-77.0,1.0,1.0,1.0909090909090908,-77.5,77.5
+10-<20 s,wGKgwOP3h30_2,Several pigeons are cooing while someone whistles,2,183.0,199.0,16.0,180.0,201.0,21.0,0.8214,0.7619047619047619,-3.0,2.0,5.0,5.0,1.3125,-0.5,0.5
+10-<20 s,wPz6QRAkEb4_1,"Birds chirp, a noise like a plane engine",1,158.0,170.0,12.0,151.0,176.0,25.0,0.9599,0.48,-7.0,6.0,13.0,13.0,2.0833333333333335,-0.5,0.5
+10-<20 s,wnpJndXuxLc_1,A train horn is sounding,2,62.0,72.0,10.0,64.0,73.0,9.0,0.966,0.7272727272727273,2.0,1.0,-1.0,1.0,0.9,1.5,1.5
+10-<20 s,wqugJOvBkhY_1,Music plays and a baby cries,2,28.0,41.0,13.0,0.0,5.0,5.0,0.9161,0.0,-28.0,-36.0,-8.0,8.0,0.38461538461538464,-32.0,32.0
+10-<20 s,wsHBIgzs9Fs_2,Voices carry over the engine noise,3,169.0,184.0,15.0,3.0,19.0,16.0,0.9042,0.0,-166.0,-165.0,1.0,1.0,1.0666666666666667,-165.5,165.5
+10-<20 s,wulOEFdECWs_1,Rain falls as thunder rumbles,2,35.0,50.0,15.0,13.0,16.0,3.0,0.9189,0.0,-22.0,-34.0,-12.0,12.0,0.2,-28.0,28.0
+10-<20 s,wzXPRI7eXOM_1,"A man's voice, an engine noise",2,39.0,51.0,12.0,80.0,85.0,5.0,0.9625,0.0,41.0,34.0,-7.0,7.0,0.4166666666666667,37.5,37.5
+10-<20 s,x-Yx0rqr1vY_1,Music is playing as frogs croak,1,40.0,54.0,14.0,162.0,177.0,15.0,0.9421,0.0,122.0,123.0,1.0,1.0,1.0714285714285714,122.5,122.5
+10-<20 s,x-Yx0rqr1vY_2,Frogs are croaking while the river flows,1,130.0,148.0,18.0,14.0,50.0,36.0,0.8467,0.0,-116.0,-98.0,18.0,18.0,2.0,-107.0,107.0
+10-<20 s,x-gIWB__rIE_3,A man is talking and chopping with a knife amid background noise,1,79.0,96.0,17.0,4.0,18.0,14.0,0.9864,0.0,-75.0,-78.0,-3.0,3.0,0.8235294117647058,-76.5,76.5
+10-<20 s,x-gIWB__rIE_4,Something is being scraped amid background noise,1,120.0,137.0,17.0,0.0,6.0,6.0,0.9844,0.0,-120.0,-131.0,-11.0,11.0,0.35294117647058826,-125.5,125.5
+10-<20 s,x4a9YGIw4ok_1,Pressing the lever sends water rushing through the toilet,4,72.0,84.0,12.0,74.0,83.0,9.0,0.9616,0.75,2.0,-1.0,-3.0,3.0,0.75,0.5,0.5
+10-<20 s,x5eIC7S0fbg_1,Someone uses a machine,2,115.0,125.0,10.0,61.0,74.0,13.0,0.9153,0.0,-54.0,-51.0,3.0,3.0,1.3,-52.5,52.5
+10-<20 s,xDsO5LiaaAY_1,The sound of a motor,1,135.0,150.0,15.0,5.0,32.0,27.0,0.9288,0.0,-130.0,-118.0,12.0,12.0,1.8,-124.0,124.0
+10-<20 s,xKB8O8LTs6s_1,Music is playing while sound effects play and a man is talking,1,4.0,19.0,15.0,4.0,15.0,11.0,0.9496,0.7333333333333333,0.0,-4.0,-4.0,4.0,0.7333333333333333,-2.0,2.0
+10-<20 s,xNMovAf3o50_1,Rain falls and thunder rumbles,1,103.0,122.0,19.0,0.0,4.0,4.0,0.987,0.0,-103.0,-118.0,-15.0,15.0,0.21052631578947367,-110.5,110.5
+10-<20 s,xVzetIIzS9c_1,Siren amid cars passing,2,46.0,60.0,14.0,0.0,51.0,51.0,0.822,0.08333333333333333,-46.0,-9.0,37.0,37.0,3.642857142857143,-27.5,27.5
+10-<20 s,x_l2PIWyXaM_1,Car noise and music play together,1,57.0,76.0,19.0,8.0,19.0,11.0,0.9309,0.0,-49.0,-57.0,-8.0,8.0,0.5789473684210527,-53.0,53.0
+10-<20 s,x_l2PIWyXaM_2,A man sings along with the music,1,57.0,75.0,18.0,155.0,251.0,96.0,0.8865,0.0,98.0,176.0,78.0,78.0,5.333333333333333,137.0,137.0
+10-<20 s,xtWeJ56-U-g_1,Electronic sounds,2,25.0,35.0,10.0,24.0,34.0,10.0,0.9527,0.8181818181818182,-1.0,-1.0,0.0,0.0,1.0,-1.0,1.0
+10-<20 s,xtWeJ56-U-g_2,Someone is typing,2,108.0,119.0,11.0,45.0,52.0,7.0,0.9697,0.0,-63.0,-67.0,-4.0,4.0,0.6363636363636364,-65.0,65.0
+10-<20 s,xvDdE3zNf8Y_1,A woman is speaking and plastic is being handled,1,51.0,70.0,19.0,31.0,44.0,13.0,0.9784,0.0,-20.0,-26.0,-6.0,6.0,0.6842105263157895,-23.0,23.0
+10-<20 s,y2ZBGpgbhHM_1,Dogs and birds are making noise,1,0.0,10.0,10.0,0.0,9.0,9.0,0.9571,0.9,0.0,-1.0,-1.0,1.0,0.9,-0.5,0.5
+10-<20 s,yUsCyVRXMoY_1,Machine noise,3,14.0,24.0,10.0,13.0,25.0,12.0,0.9506,0.8333333333333334,-1.0,1.0,2.0,2.0,1.2,0.0,0.0
+10-<20 s,yW6FWLSLkx4_1,A woman is talking,1,68.0,82.0,14.0,24.0,40.0,16.0,0.9701,0.0,-44.0,-42.0,2.0,2.0,1.1428571428571428,-43.0,43.0
+10-<20 s,yW6FWLSLkx4_2,Music is playing,1,83.0,97.0,14.0,84.0,97.0,13.0,0.9537,0.9285714285714286,1.0,0.0,-1.0,1.0,0.9285714285714286,0.5,0.5
+10-<20 s,yhQ2Lg-7qDY_2,A woman is kneading meat while talking,1,27.0,39.0,12.0,10.0,20.0,10.0,0.965,0.0,-17.0,-19.0,-2.0,2.0,0.8333333333333334,-18.0,18.0
+10-<20 s,yks4cLgIDMc_3,Music plays as a car moves along,1,138.0,153.0,15.0,209.0,284.0,75.0,0.8869,0.0,71.0,131.0,60.0,60.0,5.0,101.0,101.0
+10-<20 s,z9-3K1PFMjw_1,Someone pushes buttons,2,1.0,12.0,11.0,8.0,10.0,2.0,0.9536,0.18181818181818182,7.0,-2.0,-9.0,9.0,0.18181818181818182,2.5,2.5
+10-<20 s,zAYW_RjbHHI_2,"Music is playing while a man provides commentary, with engine and driving sounds in the background",1,61.0,73.0,12.0,30.0,51.0,21.0,0.9578,0.0,-31.0,-22.0,9.0,9.0,1.75,-26.5,26.5
+10-<20 s,zU-oKUEckKo_2,Railroad crossing sounds,1,20.0,34.0,14.0,36.0,54.0,18.0,0.913,0.0,16.0,20.0,4.0,4.0,1.2857142857142858,18.0,18.0
+10-<20 s,zgUgkpk78xU_1,A train whistle sounds while a crossing bell is ringing,1,62.0,72.0,10.0,19.0,31.0,12.0,0.9746,0.0,-43.0,-41.0,2.0,2.0,1.2,-42.0,42.0
+10-<20 s,zjTG0gaGCUI_1,The output of the airplane engine gradually increases,1,82.0,98.0,16.0,3.0,32.0,29.0,0.9628,0.0,-79.0,-66.0,13.0,13.0,1.8125,-72.5,72.5
+10-<20 s,zl3OnWjr3Y4_1,Music plays,1,0.0,11.0,11.0,0.0,9.0,9.0,0.9944,0.8181818181818182,0.0,-2.0,-2.0,2.0,0.8181818181818182,-1.0,1.0
+10-<20 s,zsLxS-uLJTw_1,Birds are chirping and a woman is making an announcement,1,0.0,15.0,15.0,0.0,9.0,9.0,0.9948,0.6,0.0,-6.0,-6.0,6.0,0.6,-3.0,3.0
+>=20 s,rqfQRErjfk8_1,Music is playing and a man is singing,2,4.0,109.0,105.0,0.0,11.0,11.0,0.9833,0.06422018348623854,-4.0,-98.0,-94.0,94.0,0.10476190476190476,-51.0,51.0
+>=20 s,rqfQRErjfk8_2,Loud cheering and applause from a crowd,1,169.0,190.0,21.0,165.0,188.0,23.0,0.9697,0.76,-4.0,-2.0,2.0,2.0,1.0952380952380953,-3.0,3.0
+>=20 s,rwT__ERCUno_2,Engine noise,1,89.0,154.0,65.0,86.0,153.0,67.0,0.8528,0.9411764705882353,-3.0,-1.0,2.0,2.0,1.0307692307692307,-2.0,2.0
+>=20 s,s4tUs779vBA_1,"Sound effects play, gunshots ring out, and a man speaks",2,51.0,142.0,91.0,86.0,97.0,11.0,0.9218,0.12087912087912088,35.0,-45.0,-80.0,80.0,0.12087912087912088,-5.0,5.0
+>=20 s,s7knHCFW82w_2,"A train is moving along, sounding its horn",1,15.0,44.0,29.0,16.0,48.0,32.0,0.9811,0.8484848484848485,1.0,4.0,3.0,3.0,1.103448275862069,2.5,2.5
+>=20 s,sC_i_y7QS1U_1,A man is talking while a motorcycle engine is running,1,118.0,300.0,182.0,104.0,143.0,39.0,0.9201,0.12755102040816327,-14.0,-157.0,-143.0,143.0,0.21428571428571427,-85.5,85.5
+>=20 s,sNB8zxXneIM_1,Roosters and other birds are calling,1,6.0,93.0,87.0,4.0,12.0,8.0,0.9387,0.06741573033707865,-2.0,-81.0,-79.0,79.0,0.09195402298850575,-41.5,41.5
+>=20 s,sOa7g-44Dag_1,A man talks as machines whir and something gets sprayed,2,27.0,57.0,30.0,23.0,27.0,4.0,0.9621,0.0,-4.0,-30.0,-26.0,26.0,0.13333333333333333,-17.0,17.0
+>=20 s,sSMl2vc3e_k_2,Someone is snoring,1,6.0,104.0,98.0,92.0,96.0,4.0,0.9356,0.04081632653061224,86.0,-8.0,-94.0,94.0,0.04081632653061224,39.0,39.0
+>=20 s,s_apQIQUhFc_1,Music plays,1,4.0,34.0,30.0,2.0,36.0,34.0,0.9811,0.8823529411764706,-2.0,2.0,4.0,4.0,1.1333333333333333,0.0,0.0
+>=20 s,se87d6yxEOA_2,"A train is moving along, ringing its bell",2,205.0,240.0,35.0,203.0,231.0,28.0,0.9434,0.7027027027027027,-2.0,-9.0,-7.0,7.0,0.8,-5.5,5.5
+>=20 s,sgAjFcKriHk_1,The roar of the airplane engines,2,0.0,132.0,132.0,82.0,136.0,54.0,0.9164,0.36764705882352944,82.0,4.0,-78.0,78.0,0.4090909090909091,43.0,43.0
+>=20 s,tDlfY3nmx1A_1,A man's voice and several people laughing,1,38.0,63.0,25.0,39.0,46.0,7.0,0.9463,0.28,1.0,-17.0,-18.0,18.0,0.28,-8.0,8.0
+>=20 s,tDlysoZiA1I_1,An animal calls out as birds are chirping,1,0.0,21.0,21.0,1.0,7.0,6.0,0.9612,0.2857142857142857,1.0,-14.0,-15.0,15.0,0.2857142857142857,-6.5,6.5
+>=20 s,tEE3MpBt1sg_1,A man is laughing,2,105.0,128.0,23.0,3.0,10.0,7.0,0.9694,0.0,-102.0,-118.0,-16.0,16.0,0.30434782608695654,-110.0,110.0
+>=20 s,tH17JPjDPnc_2,"With music playing and machines running, people are talking",1,74.0,232.0,158.0,0.0,10.0,10.0,0.9527,0.0,-74.0,-222.0,-148.0,148.0,0.06329113924050633,-148.0,148.0
+>=20 s,tK4VlLsNxak_1,A bell rings while a man is speaking,1,161.0,188.0,27.0,172.0,183.0,11.0,0.9672,0.4074074074074074,11.0,-5.0,-16.0,16.0,0.4074074074074074,3.0,3.0
+>=20 s,tRJVUSdMjQI_1,Music is playing,1,156.0,191.0,35.0,144.0,183.0,39.0,0.8893,0.574468085106383,-12.0,-8.0,4.0,4.0,1.1142857142857143,-10.0,10.0
+>=20 s,tcd9QCdjTI0_1,Rain falls as thunder rumbles,2,40.0,62.0,22.0,53.0,57.0,4.0,0.9516,0.18181818181818182,13.0,-5.0,-18.0,18.0,0.18181818181818182,4.0,4.0
+>=20 s,tezvROoo4bs_2,An engine is running,2,63.0,89.0,26.0,63.0,87.0,24.0,0.9506,0.9230769230769231,0.0,-2.0,-2.0,2.0,0.9230769230769231,-1.0,1.0
+>=20 s,tvP4E1r7yk8_3,Train rumbling and a whistle,1,138.0,161.0,23.0,25.0,43.0,18.0,0.9579,0.0,-113.0,-118.0,-5.0,5.0,0.782608695652174,-115.5,115.5
+>=20 s,u--KhUW8l1Y_1,Sirens wail while engines run,2,32.0,78.0,46.0,24.0,72.0,48.0,0.8794,0.7407407407407407,-8.0,-6.0,2.0,2.0,1.0434782608695652,-7.0,7.0
+>=20 s,u-6osTkkOfY_1,"A train moves along, releasing steam as it goes over the sound of the wind",2,25.0,57.0,32.0,37.0,48.0,11.0,0.9509,0.34375,12.0,-9.0,-21.0,21.0,0.34375,1.5,1.5
+>=20 s,u-6osTkkOfY_2,The sound of steam being released,2,86.0,177.0,91.0,41.0,57.0,16.0,0.9601,0.0,-45.0,-120.0,-75.0,75.0,0.17582417582417584,-82.5,82.5
+>=20 s,u6jIvCtKarQ_1,Liquid is flowing,2,93.0,118.0,25.0,94.0,103.0,9.0,0.9695,0.36,1.0,-15.0,-16.0,16.0,0.36,-7.0,7.0
+>=20 s,u6jIvCtKarQ_2,Liquid is flowing and something is being tapped,1,149.0,171.0,22.0,95.0,105.0,10.0,0.9758,0.0,-54.0,-66.0,-12.0,12.0,0.45454545454545453,-60.0,60.0
+>=20 s,uC9dtII1KDI_1,"Wind is blowing, birds are chirping, and an animal is walking",1,121.0,162.0,41.0,11.0,20.0,9.0,0.9268,0.0,-110.0,-142.0,-32.0,32.0,0.21951219512195122,-126.0,126.0
+>=20 s,uGS7O46tlSo_1,A man talks as the wind blows,1,50.0,130.0,80.0,4.0,18.0,14.0,0.948,0.0,-46.0,-112.0,-66.0,66.0,0.175,-79.0,79.0
+>=20 s,uJV8NDaHqqk_1,Birds chirping over the sound of insects buzzing,4,44.0,89.0,45.0,47.0,76.0,29.0,0.9475,0.6444444444444445,3.0,-13.0,-16.0,16.0,0.6444444444444445,-5.0,5.0
+>=20 s,uJV8NDaHqqk_2,Birds chirping over the sound of insects buzzing and a car driving,1,276.0,300.0,24.0,53.0,74.0,21.0,0.9291,0.0,-223.0,-226.0,-3.0,3.0,0.875,-224.5,224.5
+>=20 s,uJe1Gvp-MeM_1,Birds are chirping,1,4.0,85.0,81.0,6.0,15.0,9.0,0.9638,0.1111111111111111,2.0,-70.0,-72.0,72.0,0.1111111111111111,-34.0,34.0
+>=20 s,uK5doE8g_nY_2,Helicopter rotors are spinning,1,57.0,116.0,59.0,42.0,103.0,61.0,0.9457,0.6216216216216216,-15.0,-13.0,2.0,2.0,1.0338983050847457,-14.0,14.0
+>=20 s,uXxVebHsGZ8_1,A clock ticks and a bell rings,2,168.0,200.0,32.0,171.0,196.0,25.0,0.9473,0.78125,3.0,-4.0,-7.0,7.0,0.78125,-0.5,0.5
+>=20 s,uiItxDsDMFI_2,Someone is sawing wood,1,77.0,109.0,32.0,105.0,111.0,6.0,0.8882,0.11764705882352941,28.0,2.0,-26.0,26.0,0.1875,15.0,15.0
+>=20 s,uiNuH51lzVY_1,A man is speaking somewhere with water flowing nearby,2,40.0,64.0,24.0,0.0,14.0,14.0,0.9818,0.0,-40.0,-50.0,-10.0,10.0,0.5833333333333334,-45.0,45.0
+>=20 s,ukxt9I7eMMg_1,Someone is talking as something fries,3,2.0,31.0,29.0,1.0,16.0,15.0,0.932,0.4666666666666667,-1.0,-15.0,-14.0,14.0,0.5172413793103449,-8.0,8.0
+>=20 s,uzQnlJXBbOM_1,A man's voice is speaking,2,0.0,21.0,21.0,114.0,130.0,16.0,0.9554,0.0,114.0,109.0,-5.0,5.0,0.7619047619047619,111.5,111.5
+>=20 s,v0x1odnXtP0_1,A dog is barking over typing sounds,1,22.0,49.0,27.0,7.0,24.0,17.0,0.9541,0.047619047619047616,-15.0,-25.0,-10.0,10.0,0.6296296296296297,-20.0,20.0
+>=20 s,v5cSxLaHADY_1,Someone's hand rustles against plastic,1,1.0,37.0,36.0,0.0,41.0,41.0,0.9584,0.8780487804878049,-1.0,4.0,5.0,5.0,1.1388888888888888,1.5,1.5
+>=20 s,vBslzh7saPw_2,An engine running amid wind blowing and a man's voice,1,43.0,66.0,23.0,17.0,28.0,11.0,0.9382,0.0,-26.0,-38.0,-12.0,12.0,0.4782608695652174,-32.0,32.0
+>=20 s,vBslzh7saPw_3,An engine running and wind blowing,1,43.0,100.0,57.0,54.0,105.0,51.0,0.9131,0.7419354838709677,11.0,5.0,-6.0,6.0,0.8947368421052632,8.0,8.0
+>=20 s,vJrjSeP17yE_1,Someone snores as music plays,1,4.0,27.0,23.0,5.0,13.0,8.0,0.9774,0.34782608695652173,1.0,-14.0,-15.0,15.0,0.34782608695652173,-6.5,6.5
+>=20 s,vSeGhaZt-aI_2,A man is speaking while water flows in the background,1,112.0,202.0,90.0,0.0,5.0,5.0,0.9495,0.0,-112.0,-197.0,-85.0,85.0,0.05555555555555555,-154.5,154.5
+>=20 s,vW4x7S1VfQc_3,Someone grills something,1,143.0,178.0,35.0,73.0,86.0,13.0,0.9264,0.0,-70.0,-92.0,-22.0,22.0,0.37142857142857144,-81.0,81.0
+>=20 s,vZAqdHZ81yA_2,A motorcycle engine is making noise,1,177.0,267.0,90.0,231.0,260.0,29.0,0.9713,0.32222222222222224,54.0,-7.0,-61.0,61.0,0.32222222222222224,23.5,23.5
+>=20 s,vaX_J_G3638_2,Horses are walking with their hooves clacking while people are talking and music is playing,1,143.0,163.0,20.0,110.0,117.0,7.0,0.9221,0.0,-33.0,-46.0,-13.0,13.0,0.35,-39.5,39.5
+>=20 s,vddP56-ogds_2,Birds are singing and water is flowing,1,24.0,71.0,47.0,1.0,12.0,11.0,0.9391,0.0,-23.0,-59.0,-36.0,36.0,0.23404255319148937,-41.0,41.0
+>=20 s,vh30P49Po6s_1,A duck quacks,1,5.0,69.0,64.0,5.0,11.0,6.0,0.9704,0.09375,0.0,-58.0,-58.0,58.0,0.09375,-29.0,29.0
+>=20 s,vqZuVbG6-HI_2,An engine is running,1,38.0,178.0,140.0,32.0,181.0,149.0,0.9096,0.9395973154362416,-6.0,3.0,9.0,9.0,1.0642857142857143,-1.5,1.5
+>=20 s,vqZuVbG6-HI_3,A helicopter is flying,1,153.0,173.0,20.0,40.0,168.0,128.0,0.9005,0.11278195488721804,-113.0,-5.0,108.0,108.0,6.4,-59.0,59.0
+>=20 s,vveS8HT7Uog_2,A man is talking,3,146.0,205.0,59.0,157.0,185.0,28.0,0.9518,0.4745762711864407,11.0,-20.0,-31.0,31.0,0.4745762711864407,-4.5,4.5
+>=20 s,vzceMbkl_Wc_1,Two men chat and laugh as water pours from the tap,1,0.0,23.0,23.0,165.0,186.0,21.0,0.9409,0.0,165.0,163.0,-2.0,2.0,0.9130434782608695,164.0,164.0
+>=20 s,vzxHnu-SFEw_2,"While several people are talking, a woman files something as she speaks",1,79.0,146.0,67.0,117.0,129.0,12.0,0.9595,0.1791044776119403,38.0,-17.0,-55.0,55.0,0.1791044776119403,10.5,10.5
+>=20 s,w2bYrCVLT60_1,A man is talking,1,2.0,62.0,60.0,12.0,42.0,30.0,0.9622,0.5,10.0,-20.0,-30.0,30.0,0.5,-5.0,5.0
+>=20 s,w2bYrCVLT60_2,A man is talking while ducks are quacking,1,27.0,62.0,35.0,3.0,13.0,10.0,0.9589,0.0,-24.0,-49.0,-25.0,25.0,0.2857142857142857,-36.5,36.5
+>=20 s,w2bYrCVLT60_3,Ducks are quacking,1,27.0,130.0,103.0,33.0,38.0,5.0,0.9568,0.04854368932038835,6.0,-92.0,-98.0,98.0,0.04854368932038835,-43.0,43.0
+>=20 s,w2htir_si7g_1,Someone is whistling and another person is singing,1,68.0,91.0,23.0,126.0,139.0,13.0,0.9325,0.0,58.0,48.0,-10.0,10.0,0.5652173913043478,53.0,53.0
+>=20 s,w2htir_si7g_3,Someone is whistling,3,121.0,160.0,39.0,32.0,51.0,19.0,0.9652,0.0,-89.0,-109.0,-20.0,20.0,0.48717948717948717,-99.0,99.0
+>=20 s,w5W_5Kqtc8E_1,The engine of a boat rumbles,1,0.0,56.0,56.0,0.0,80.0,80.0,0.8261,0.7,0.0,24.0,24.0,24.0,1.4285714285714286,12.0,12.0
+>=20 s,w5W_5Kqtc8E_2,A boat is sailing,2,57.0,86.0,29.0,0.0,100.0,100.0,0.8805,0.29,-57.0,14.0,71.0,71.0,3.4482758620689653,-21.5,21.5
+>=20 s,w6RTHR6AeAg_1,Birds are chirping,1,11.0,45.0,34.0,21.0,47.0,26.0,0.9251,0.6666666666666666,10.0,2.0,-8.0,8.0,0.7647058823529411,6.0,6.0
+>=20 s,wDVMhEdTiVw_3,Someone is moving in the water,1,62.0,99.0,37.0,32.0,39.0,7.0,0.9727,0.0,-30.0,-60.0,-30.0,30.0,0.1891891891891892,-45.0,45.0
+>=20 s,wGKgwOP3h30_1,Pigeons are cooing and a man is speaking,1,2.0,28.0,26.0,0.0,17.0,17.0,0.9799,0.5357142857142857,-2.0,-11.0,-9.0,9.0,0.6538461538461539,-6.5,6.5
+>=20 s,wGKgwOP3h30_2,Several pigeons are cooing while someone whistles,2,44.0,69.0,25.0,180.0,201.0,21.0,0.8214,0.0,136.0,132.0,-4.0,4.0,0.84,134.0,134.0
+>=20 s,wfHeoPDLMaM_2,Ducks are quacking,1,8.0,61.0,53.0,1.0,4.0,3.0,0.9897,0.0,-7.0,-57.0,-50.0,50.0,0.05660377358490566,-32.0,32.0
+>=20 s,wl44ppID9ds_1,Water splashes,1,0.0,74.0,74.0,0.0,26.0,26.0,0.9342,0.35135135135135137,0.0,-48.0,-48.0,48.0,0.35135135135135137,-24.0,24.0
+>=20 s,wnNNcxAPwGQ_1,An engine running and a man's voice,1,75.0,101.0,26.0,2.0,8.0,6.0,0.9067,0.0,-73.0,-93.0,-20.0,20.0,0.23076923076923078,-83.0,83.0
+>=20 s,wudZTNBtVqc_1,A car engine is running,1,4.0,91.0,87.0,33.0,64.0,31.0,0.8963,0.3563218390804598,29.0,-27.0,-56.0,56.0,0.3563218390804598,1.0,1.0
+>=20 s,wudZTNBtVqc_2,Wind is blowing and a car is driving,1,62.0,92.0,30.0,42.0,50.0,8.0,0.9589,0.0,-20.0,-42.0,-22.0,22.0,0.26666666666666666,-31.0,31.0
+>=20 s,x-Yx0rqr1vY_1,Music is playing as frogs croak,1,4.0,26.0,22.0,162.0,177.0,15.0,0.9421,0.0,158.0,151.0,-7.0,7.0,0.6818181818181818,154.5,154.5
+>=20 s,x-Yx0rqr1vY_3,Music is playing,1,149.0,180.0,31.0,0.0,26.0,26.0,0.9577,0.0,-149.0,-154.0,-5.0,5.0,0.8387096774193549,-151.5,151.5
+>=20 s,x5eIC7S0fbg_1,Someone uses a machine,1,68.0,105.0,37.0,61.0,74.0,13.0,0.9153,0.13636363636363635,-7.0,-31.0,-24.0,24.0,0.35135135135135137,-19.0,19.0
+>=20 s,x6ijhqRY38s_2,Someone is grinding a pepper mill and talking,1,82.0,156.0,74.0,93.0,106.0,13.0,0.9114,0.17567567567567569,11.0,-50.0,-61.0,61.0,0.17567567567567569,-19.5,19.5
+>=20 s,xDsO5LiaaAY_1,The sound of a motor,6,5.0,28.0,23.0,5.0,32.0,27.0,0.9288,0.8518518518518519,0.0,4.0,4.0,4.0,1.173913043478261,2.0,2.0
+>=20 s,xNMovAf3o50_2,Music is playing,1,7.0,257.0,250.0,0.0,215.0,215.0,0.8459,0.8093385214007782,-7.0,-42.0,-35.0,35.0,0.86,-24.5,24.5
+>=20 s,xNMovAf3o50_3,Music is playing and a man is singing,2,27.0,103.0,76.0,0.0,86.0,86.0,0.8953,0.5728155339805825,-27.0,-17.0,10.0,10.0,1.131578947368421,-22.0,22.0
+>=20 s,xSN_cBFt-PI_1,A clock is ticking and chiming,1,11.0,40.0,29.0,25.0,35.0,10.0,0.9209,0.3448275862068966,14.0,-5.0,-19.0,19.0,0.3448275862068966,4.5,4.5
+>=20 s,xZepNM9qcRA_1,A man is speaking while a motorcycle engine runs,4,48.0,73.0,25.0,48.0,66.0,18.0,0.9553,0.72,0.0,-7.0,-7.0,7.0,0.72,-3.5,3.5
+>=20 s,x_l2PIWyXaM_1,Car noise and music play together,1,10.0,31.0,21.0,8.0,19.0,11.0,0.9309,0.391304347826087,-2.0,-12.0,-10.0,10.0,0.5238095238095238,-7.0,7.0
+>=20 s,x_l2PIWyXaM_2,A man sings along with the music,3,171.0,246.0,75.0,155.0,251.0,96.0,0.8865,0.78125,-16.0,5.0,21.0,21.0,1.28,-5.5,5.5
+>=20 s,xmdGaCbvhFc_2,The sound of metal moving the lever and the sound of water,1,75.0,153.0,78.0,82.0,87.0,5.0,0.9427,0.0641025641025641,7.0,-66.0,-73.0,73.0,0.0641025641025641,-29.5,29.5
+>=20 s,xtWeJ56-U-g_2,Someone is typing,1,42.0,73.0,31.0,45.0,52.0,7.0,0.9697,0.22580645161290322,3.0,-21.0,-24.0,24.0,0.22580645161290322,-9.0,9.0
+>=20 s,xx3yKzrSOBI_1,"A man talks, sirens, engine noises",1,35.0,64.0,29.0,4.0,40.0,36.0,0.9508,0.08333333333333333,-31.0,-24.0,7.0,7.0,1.2413793103448276,-27.5,27.5
+>=20 s,y4NpJekTMT8_1,Music is playing,2,0.0,29.0,29.0,0.0,31.0,31.0,0.9765,0.9354838709677419,0.0,2.0,2.0,2.0,1.0689655172413792,1.0,1.0
+>=20 s,yHeVV-xeOxQ_2,Milking a cow,1,91.0,165.0,74.0,136.0,147.0,11.0,0.9411,0.14864864864864866,45.0,-18.0,-63.0,63.0,0.14864864864864866,13.5,13.5
+>=20 s,yUsCyVRXMoY_1,Machine noise,1,76.0,111.0,35.0,13.0,25.0,12.0,0.9506,0.0,-63.0,-86.0,-23.0,23.0,0.34285714285714286,-74.5,74.5
+>=20 s,yVumC9TGknc_1,Bird-like chirping effects,1,0.0,44.0,44.0,1.0,10.0,9.0,0.9776,0.20454545454545456,1.0,-34.0,-35.0,35.0,0.20454545454545456,-16.5,16.5
+>=20 s,yW6FWLSLkx4_1,A woman is talking,1,4.0,60.0,56.0,24.0,40.0,16.0,0.9701,0.2857142857142857,20.0,-20.0,-40.0,40.0,0.2857142857142857,0.0,0.0
+>=20 s,yaln9y8I7ms_1,"With music featuring drums playing, a boy is talking",1,8.0,34.0,26.0,6.0,33.0,27.0,0.9819,0.8928571428571429,-2.0,-1.0,1.0,1.0,1.0384615384615385,-1.5,1.5
+>=20 s,yhQ2Lg-7qDY_1,Something is being grilled,1,49.0,153.0,104.0,40.0,61.0,21.0,0.9258,0.10619469026548672,-9.0,-92.0,-83.0,83.0,0.20192307692307693,-50.5,50.5
+>=20 s,yiUDYRSJpJI_1,A car speeds by and explosions echo,3,61.0,107.0,46.0,44.0,89.0,45.0,0.9338,0.4444444444444444,-17.0,-18.0,-1.0,1.0,0.9782608695652174,-17.5,17.5
+>=20 s,yiUDYRSJpJI_2,A helicopter flies,2,106.0,176.0,70.0,47.0,250.0,203.0,0.8044,0.3448275862068966,-59.0,74.0,133.0,133.0,2.9,7.5,7.5
+>=20 s,yswmmRZFItk_1,Several frogs croak,1,3.0,67.0,64.0,2.0,5.0,3.0,0.8089,0.03076923076923077,-1.0,-62.0,-61.0,61.0,0.046875,-31.5,31.5
+>=20 s,z4uELRI6p08_1,Someone is laughing,1,0.0,29.0,29.0,4.0,11.0,7.0,0.9622,0.2413793103448276,4.0,-18.0,-22.0,22.0,0.2413793103448276,-7.0,7.0
+>=20 s,zAYW_RjbHHI_1,Music is playing,2,6.0,82.0,76.0,2.0,22.0,20.0,0.947,0.2,-4.0,-60.0,-56.0,56.0,0.2631578947368421,-32.0,32.0
+>=20 s,zAYW_RjbHHI_2,"Music is playing while a man provides commentary, with engine and driving sounds in the background",1,15.0,47.0,32.0,30.0,51.0,21.0,0.9578,0.4722222222222222,15.0,4.0,-11.0,11.0,0.65625,9.5,9.5
+>=20 s,zAYW_RjbHHI_3,Engine noise blends with the sound of a car driving,1,15.0,129.0,114.0,85.0,90.0,5.0,0.9623,0.043859649122807015,70.0,-39.0,-109.0,109.0,0.043859649122807015,15.5,15.5
+>=20 s,zCrAfDfv6-A_1,Whistling,1,0.0,61.0,61.0,34.0,36.0,2.0,0.9339,0.03278688524590164,34.0,-25.0,-59.0,59.0,0.03278688524590164,4.5,4.5
+>=20 s,zTLVJCo4WEE_1,"Two men talk as insects chirp, wind blows, and metal clangs",1,0.0,35.0,35.0,1.0,16.0,15.0,0.9344,0.42857142857142855,1.0,-19.0,-20.0,20.0,0.42857142857142855,-9.0,9.0
+>=20 s,zU-oKUEckKo_1,A horn blows amid vehicle noise,1,41.0,68.0,27.0,47.0,64.0,17.0,0.9483,0.6296296296296297,6.0,-4.0,-10.0,10.0,0.6296296296296297,1.0,1.0
+>=20 s,zY3icUyMdh8_3,Several people are talking inside a moving bus,1,154.0,300.0,146.0,134.0,297.0,163.0,0.8362,0.8614457831325302,-20.0,-3.0,17.0,17.0,1.1164383561643836,-11.5,11.5
+>=20 s,zgUgkpk78xU_3,A train is moving while a crossing bell is ringing,1,70.0,209.0,139.0,58.0,70.0,12.0,0.9718,0.0,-12.0,-139.0,-127.0,127.0,0.08633093525179857,-75.5,75.5
+>=20 s,zk-xJGQU8-4_1,"With music playing, a woman and a man are talking as something sizzles and objects are being set down",1,135.0,194.0,59.0,255.0,269.0,14.0,0.9544,0.0,120.0,75.0,-45.0,45.0,0.23728813559322035,97.5,97.5
+>=20 s,zvmXKyAFq80_2,Car engine sounds,1,0.0,26.0,26.0,1.0,9.0,8.0,0.9368,0.3076923076923077,1.0,-17.0,-18.0,18.0,0.3076923076923077,-8.0,8.0
