@@ -1,6 +1,12 @@
 # our project
 features
 
+# Local experiment artifacts (keep reproducible configs under experiments/configs)
+analysis/results/smoke_training/
+experiments/*/
+!experiments/configs/
+!experiments/configs/**
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
