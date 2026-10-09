@@ -1,0 +1,7 @@
+{
+  "ground_truth": "data/castella_val_release.jsonl",
+  "predictions": "experiments/castella_seed2023_full/best_castella_val_preds.jsonl",
+  "ground_truth_queries": 352,
+  "prediction_queries": 352,
+  "note": "A query can occur in multiple duration bins when its ground-truth windows span multiple bins. Matching follows the official Top-1 rule."
+}
