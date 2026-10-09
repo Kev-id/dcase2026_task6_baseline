@@ -137,6 +137,9 @@ def train(
 def main(opt, resume=None):
     logger.info("Setup config, data and model...")
     set_seed(opt.seed)
+    # Experiment configs commonly use a new output directory. The released
+    # training code otherwise fails only after finishing the first epoch.
+    os.makedirs(opt.results_dir, exist_ok=True)
 
     # dataset & data loader
     dataset_config = EasyDict(
@@ -156,7 +159,9 @@ def main(opt, resume=None):
 
     train_dataset = StartEndDataset(**dataset_config)    
     copied_eval_config = copy.deepcopy(dataset_config)
-    copied_eval_config.data_path = opt.eval_path
+    # The released configs expose the validation annotation as ``val_path``.
+    # ``eval_path`` is not defined in either config.yml or the pretraining config.
+    copied_eval_config.data_path = opt.val_path
     eval_dataset = StartEndDataset(**copied_eval_config)
     
     # prepare model

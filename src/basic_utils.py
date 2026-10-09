@@ -77,7 +77,11 @@ def save_checkpoint(model, optimizer, lr_scheduler, epoch_i, opt):
 def rename_latest_to_best(latest_file_paths):
     best_file_paths = [e.replace("latest", "best") for e in latest_file_paths]
     for src, tgt in zip(latest_file_paths, best_file_paths):
-        os.renames(src, tgt)
+        # ``os.renames`` cannot overwrite an existing destination on Windows,
+        # causing training to stop the second time validation improves.
+        # ``os.replace`` provides the intended overwrite semantics on all
+        # supported platforms.
+        os.replace(src, tgt)
 
 def load_pickle(filename):
     with open(filename, "rb") as f:
