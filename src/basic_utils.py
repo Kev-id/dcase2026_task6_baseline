@@ -64,15 +64,24 @@ def write_log(opt, epoch_i, loss_meters, metrics=None, mode='train'):
     with open(filename, "a") as f:
         f.write(to_write)
 
-def save_checkpoint(model, optimizer, lr_scheduler, epoch_i, opt):
+def save_checkpoint(
+        model,
+        optimizer,
+        lr_scheduler,
+        epoch_i,
+        opt,
+        checkpoint_path=None,
+        best_score=None,
+    ):
     checkpoint = {
         "model": model.state_dict(),
         "optimizer": optimizer.state_dict(),
         "lr_scheduler": lr_scheduler.state_dict(),
         "epoch": epoch_i,
-        "opt": opt
+        "opt": opt,
+        "best_score": best_score,
     }
-    torch.save(checkpoint, opt.ckpt_filepath)
+    torch.save(checkpoint, checkpoint_path or opt.ckpt_filepath)
 
 def rename_latest_to_best(latest_file_paths):
     best_file_paths = [e.replace("latest", "best") for e in latest_file_paths]

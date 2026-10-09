@@ -214,7 +214,17 @@ tail -f pretraining.out
 nvidia-smi
 ```
 
-训练输出和 checkpoint 必须保存在 `/home/ma-user/work` 下。浏览器关闭不会终止 `nohup` 任务，但 Notebook 实例自动关机后任务仍会停止，需要依赖 checkpoint 恢复。
+训练输出和 checkpoint 必须保存在 `/home/ma-user/work` 下。浏览器关闭不会终止 `nohup` 任务，但 Notebook 实例自动关机后任务仍会停止。
+
+本项目每轮保存 `latest_checkpoint.pth`。实例重启后使用下面的命令精确恢复模型、优化器、学习率调度器、轮次和最佳验证分数：
+
+```bash
+python src/train.py \
+  --config config_pretraining.yml \
+  --resume-training results_pretraining/latest_checkpoint.pth
+```
+
+`--resume-training` 用于恢复同一个被中断的训练实验；原有 `--resume` 参数只加载模型权重，保留用于从预训练模型开始新的微调实验。两者不能同时使用。
 
 ## 8. SSH 注意事项
 

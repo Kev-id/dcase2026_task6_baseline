@@ -6,7 +6,7 @@ import random
 import argparse
 import copy
 import numpy as np
-from tqdm import tqdm, trange
+from tqdm import tqdm
 from collections import defaultdict
 
 import torch
@@ -87,7 +87,9 @@ def train(
         lr_scheduler,
         train_dataset, 
         val_dataset, 
-        opt
+        opt,
+        start_epoch=0,
+        prev_best_score=0,
     ):
     opt.train_log_txt_formatter = "{time_str} [Epoch] {epoch:03d} [Loss] {loss_str}\n"
     opt.eval_log_txt_formatter = "{time_str} [Epoch] {epoch:03d} [Loss] {loss_str} [Metrics] {eval_metrics_str}\n"
@@ -105,8 +107,15 @@ def train(
         logger.info("Using model EMA...")
         model_ema = ModelEMA(model, decay=opt.ema_decay)
 
-    prev_best_score = 0
-    for epoch_i in trange(opt.n_epoch, desc="Epoch"):
+    epoch_iterator = tqdm(
+        range(start_epoch, opt.n_epoch),
+        desc="Epoch",
+        total=opt.n_epoch,
+        initial=start_epoch,
+    )
+    latest_checkpoint_path = os.path.join(opt.results_dir, "latest_checkpoint.pth")
+
+    for epoch_i in epoch_iterator:
         train_epoch(model, criterion, train_loader, optimizer, opt, epoch_i)
         lr_scheduler.step()
 
@@ -129,12 +138,32 @@ def train(
 
             if stop_score > prev_best_score:
                 prev_best_score = stop_score
-                save_checkpoint(model, optimizer, lr_scheduler, epoch_i, opt)
-                logger.info("The checkpoint file has been updated.")
+                save_checkpoint(
+                    model,
+                    optimizer,
+                    lr_scheduler,
+                    epoch_i,
+                    opt,
+                    best_score=prev_best_score,
+                )
+                logger.info("The best checkpoint file has been updated.")
                 rename_latest_to_best(latest_file_paths)
 
+        # Save an exact training-resume point after every completed epoch. This
+        # is separate from the best validation checkpoint used for fine-tuning.
+        save_checkpoint(
+            model,
+            optimizer,
+            lr_scheduler,
+            epoch_i,
+            opt,
+            checkpoint_path=latest_checkpoint_path,
+            best_score=prev_best_score,
+        )
+        logger.info("Saved latest training checkpoint: %s", latest_checkpoint_path)
 
-def main(opt, resume=None):
+
+def main(opt, resume=None, resume_training=None):
     logger.info("Setup config, data and model...")
     set_seed(opt.seed)
     # Experiment configs commonly use a new output directory. The released
@@ -170,7 +199,23 @@ def main(opt, resume=None):
     logger.info(f"Model {model}")
     count_parameters(model, verbose=True)
 
-    if resume is not None:
+    start_epoch = 0
+    prev_best_score = 0
+
+    if resume_training is not None:
+        checkpoint = torch.load(resume_training, weights_only=False)
+        model.load_state_dict(checkpoint["model"])
+        optimizer.load_state_dict(checkpoint["optimizer"])
+        lr_scheduler.load_state_dict(checkpoint["lr_scheduler"])
+        start_epoch = checkpoint["epoch"] + 1
+        prev_best_score = checkpoint.get("best_score") or 0
+        logger.info(
+            "Resuming training from %s at epoch %d with best score %.4f",
+            resume_training,
+            start_epoch,
+            prev_best_score,
+        )
+    elif resume is not None:
         checkpoint = torch.load(resume, weights_only=False)
         model.load_state_dict(checkpoint["model"])
         logger.info("Loaded model checkpoint: {}".format(resume))
@@ -185,7 +230,9 @@ def main(opt, resume=None):
         lr_scheduler, 
         train_dataset, 
         eval_dataset, 
-        opt
+        opt,
+        start_epoch=start_epoch,
+        prev_best_score=prev_best_score,
     )
 
 
@@ -198,8 +245,18 @@ if __name__ == '__main__':
         type=str,
         help="specify model path for fine-tuning. If None, train the model from scratch.",
     )
+    parser.add_argument(
+        "--resume-training",
+        type=str,
+        help=(
+            "resume an interrupted run, including optimizer, scheduler, epoch, "
+            "and best validation score"
+        ),
+    )
     args = parser.parse_args()
+    if args.resume is not None and args.resume_training is not None:
+        parser.error("--resume and --resume-training cannot be used together")
     option_manager = BaseOptions(args.config)
     option_manager.parse()
     opt = option_manager.option
-    main(opt, args.resume)
+    main(opt, args.resume, args.resume_training)
