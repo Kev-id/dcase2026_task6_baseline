@@ -1,0 +1,17 @@
+﻿dataset,duration_bin,count,percentage
+CASTELLA train (real),<5 s,3369,54.71820691895404
+CASTELLA train (real),5-<10 s,1296,21.049212278707163
+CASTELLA train (real),10-<20 s,796,12.928374208218289
+CASTELLA train (real),>=20 s,696,11.304206594120513
+CASTELLA val (real),<5 s,494,50.77081192189106
+CASTELLA val (real),5-<10 s,195,20.041109969167522
+CASTELLA val (real),10-<20 s,138,14.182939362795478
+CASTELLA val (real),>=20 s,146,15.00513874614594
+Clotho-Moment train (synthetic),<5 s,397,1.2142900838074264
+Clotho-Moment train (synthetic),5-<10 s,869,2.657980057502906
+Clotho-Moment train (synthetic),10-<20 s,14244,43.567627087538995
+Clotho-Moment train (synthetic),>=20 s,17184,52.56010277115067
+Clotho-Moment val (synthetic),<5 s,23,0.4676697844652298
+Clotho-Moment val (synthetic),5-<10 s,86,1.7486783245221635
+Clotho-Moment val (synthetic),10-<20 s,2028,41.23627490849939
+Clotho-Moment val (synthetic),>=20 s,2781,56.547376982513214
