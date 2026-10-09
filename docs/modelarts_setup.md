@@ -148,6 +148,13 @@ hf download \
 
 命令中断后可原样重跑，Hugging Face 本地元数据会用于断点恢复。
 
+如果 ModelArts 共享代理上的单连接下载过慢，可以改用仓库提供的并行分片脚本。它会下载、拼接、解压并校验文件数量；中断后原样重跑即可从已有分片继续：
+
+```bash
+cd /home/ma-user/work/dcase2026_task6_baseline
+bash scripts/download_clotho_parallel.sh
+```
+
 ## 6. 解压与校验
 
 ```bash
