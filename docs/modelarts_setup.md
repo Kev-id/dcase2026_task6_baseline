@@ -189,6 +189,47 @@ features/clotho-moment/clap
 features/clotho-moment/clap_text
 ```
 
+### 从 Windows 上传 CASTELLA 特征
+
+如果 CASTELLA 已经下载到本地，不需要在云端重复下载。ModelArts 的 SSH 端点可能未启用 SFTP 子系统，此时新版 `scp` 会出现 `Connection closed`；增加 `-O`，强制使用旧版 SCP 协议即可。以下命令在本地 PowerShell 中执行：
+
+```powershell
+$key = "D:\Users\Administrator\Downloads\KeyPair-e34d.pem"
+$hostName = "ma-user@dev-modelarts-cneast3.huaweicloud.com"
+
+ssh -i $key -p 31477 $hostName `
+  "mkdir -p /home/ma-user/work/dcase2026_task6_baseline/downloads/castella"
+
+scp -O -i $key -P 31477 downloads/castella/clap.tar.gz `
+  "${hostName}:/home/ma-user/work/dcase2026_task6_baseline/downloads/castella/"
+
+scp -O -i $key -P 31477 downloads/castella/clap_text.tar.gz `
+  "${hostName}:/home/ma-user/work/dcase2026_task6_baseline/downloads/castella/"
+```
+
+上传完成后，在 ModelArts 终端中解压：
+
+```bash
+cd /home/ma-user/work/dcase2026_task6_baseline
+mkdir -p features/castella/clap features/castella/clap_text
+
+tar -xzf downloads/castella/clap.tar.gz \
+  -C features/castella/clap
+
+tar -xzf downloads/castella/clap_text.tar.gz \
+  --strip-components=7 \
+  -C features/castella/clap_text
+```
+
+文本压缩包带有原作者机器上的七层绝对路径，因此需要 `--strip-components=7`。压缩包中的 `._*.npz` 是 macOS 元数据文件，训练代码会忽略；解压时出现扩展属性警告不影响特征内容。校验可用文件数：
+
+```bash
+find features/castella/clap -name '*.npz' ! -name '._*' | wc -l
+find features/castella/clap_text -name '*.npz' ! -name '._*' | wc -l
+```
+
+正确结果分别为 1,862 和 3,881。
+
 ## 7. 训练前检查与启动
 
 进入环境和项目目录：
