@@ -1,6 +1,8 @@
 # dcase2026_task6_baseline
 [QD-DETR](https://github.com/wjun0830/QD-DETR)-based baseline for DCASE 2026 challenge task 6.
 
+Research reproduction notes: [ModelArts setup](docs/modelarts_setup.md) and [M1 duration sampling](docs/m1_duration_sampling.md).
+
 For the reproducible Huawei Cloud ModelArts setup used in this project, see
 [docs/modelarts_setup.md](docs/modelarts_setup.md).
 

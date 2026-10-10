@@ -24,6 +24,7 @@ from evaluate import eval_epoch, start_inference, setup_model
 
 from basic_utils import AverageMeter, dict_to_markdown, write_log, save_checkpoint, rename_latest_to_best
 from model_utils import count_parameters, ModelEMA
+from duration_sampling import build_target_matched_sampler
 
 import logging
 logger = logging.getLogger(__name__)
@@ -95,12 +96,28 @@ def train(
     opt.eval_log_txt_formatter = "{time_str} [Epoch] {epoch:03d} [Loss] {loss_str} [Metrics] {eval_metrics_str}\n"
     save_submission_filename = "latest_{}_val_preds.jsonl".format(opt.dset_name)
 
+    train_sampler = None
+    if getattr(opt, "duration_sampling", "none") == "target_match":
+        train_sampler, sampling_report = build_target_matched_sampler(
+            train_dataset.data,
+            target_path=opt.duration_sampling_target_path,
+            bin_edges=opt.duration_sampling_bin_edges,
+            seed=opt.seed,
+            power=opt.duration_sampling_power,
+        )
+        logger.info("Duration sampling report:\n%s", pprint.pformat(sampling_report))
+    elif getattr(opt, "duration_sampling", "none") != "none":
+        raise ValueError(
+            f"Unsupported duration_sampling mode: {opt.duration_sampling}"
+        )
+
     train_loader = DataLoader(
         train_dataset,
         collate_fn=start_end_collate,
         batch_size=opt.bsz,
         num_workers=opt.num_workers,
-        shuffle=True,
+        shuffle=train_sampler is None,
+        sampler=train_sampler,
     )
 
     if opt.model_ema:
@@ -116,6 +133,8 @@ def train(
     latest_checkpoint_path = os.path.join(opt.results_dir, "latest_checkpoint.pth")
 
     for epoch_i in epoch_iterator:
+        if hasattr(train_loader.sampler, "set_epoch"):
+            train_loader.sampler.set_epoch(epoch_i)
         train_epoch(model, criterion, train_loader, optimizer, opt, epoch_i)
         lr_scheduler.step()
 

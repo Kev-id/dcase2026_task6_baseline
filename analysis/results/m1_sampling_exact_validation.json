@@ -1,0 +1,62 @@
+{
+  "method": "target_duration_importance_sampling",
+  "target_path": "data/castella_train_release.jsonl",
+  "bin_edges_seconds": [
+    5.0,
+    10.0,
+    20.0
+  ],
+  "power": 1.0,
+  "seed": 2023,
+  "num_samples_per_epoch": 32694,
+  "source_query_count": 32694,
+  "target_query_count": 2182,
+  "bins": [
+    {
+      "label": "<5s",
+      "source_count": 397,
+      "source_probability": 0.012142900838074264,
+      "target_window_count": 3369,
+      "target_probability": 0.5471820691895404,
+      "importance_weight": 45.06189060474265,
+      "expected_sample_probability": 0.5471820691895404,
+      "realized_count": 17820,
+      "realized_probability": 0.5450541383740136
+    },
+    {
+      "label": "5-<10s",
+      "source_count": 869,
+      "source_probability": 0.026579800575029056,
+      "target_window_count": 1296,
+      "target_probability": 0.21049212278707163,
+      "importance_weight": 7.919251395167457,
+      "expected_sample_probability": 0.21049212278707163,
+      "realized_count": 6982,
+      "realized_probability": 0.21355600415978468
+    },
+    {
+      "label": "10-<20s",
+      "source_count": 14244,
+      "source_probability": 0.43567627087538996,
+      "target_window_count": 796,
+      "target_probability": 0.12928374208218288,
+      "importance_weight": 0.29674267506563373,
+      "expected_sample_probability": 0.12928374208218288,
+      "realized_count": 4212,
+      "realized_probability": 0.12883097816113048
+    },
+    {
+      "label": ">=20s",
+      "source_count": 17184,
+      "source_probability": 0.5256010277115067,
+      "target_window_count": 696,
+      "target_probability": 0.11304206594120514,
+      "importance_weight": 0.21507200325196466,
+      "expected_sample_probability": 0.11304206594120514,
+      "realized_count": 3680,
+      "realized_probability": 0.11255887930507126
+    }
+  ],
+  "validated_epoch": 0,
+  "source_path": "data/clotho_moment_train_release.jsonl"
+}
