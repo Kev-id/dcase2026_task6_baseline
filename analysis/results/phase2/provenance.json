@@ -1,0 +1,42 @@
+[
+  {
+    "method": "b2",
+    "seed": 2023,
+    "input": "analysis\\results\\b2_seed2023_val_by_duration\\per_query.csv",
+    "sha256": "e7d745d7f0be89f678c60ca821ff5a5ab03fc1310fd4edfcedaef184dd7f5e90",
+    "queries": 352,
+    "full_candidates": false,
+    "min_candidates": 1,
+    "max_candidates": 1
+  },
+  {
+    "method": "b2",
+    "seed": 2024,
+    "input": "analysis\\results\\b2_seed2024_val_by_duration\\per_query.csv",
+    "sha256": "be606ce52b48f97abe93137a72d04ce5d7f156a656a04f9a494b813b5883cc5b",
+    "queries": 352,
+    "full_candidates": false,
+    "min_candidates": 1,
+    "max_candidates": 1
+  },
+  {
+    "method": "m1",
+    "seed": 2023,
+    "input": "analysis\\results\\m1_seed2023_val_by_duration\\per_query.csv",
+    "sha256": "30351459e4ba492ab99323ff6eda7da4f2b3cd1717187beebc56372e487192e0",
+    "queries": 352,
+    "full_candidates": false,
+    "min_candidates": 1,
+    "max_candidates": 1
+  },
+  {
+    "method": "m1",
+    "seed": 2024,
+    "input": "analysis\\results\\m1_seed2024_val_by_duration\\per_query.csv",
+    "sha256": "9556e2c962accf1ae4572826d62d9b280260c4959b08891e13859f331e3366a1",
+    "queries": 352,
+    "full_candidates": false,
+    "min_candidates": 1,
+    "max_candidates": 1
+  }
+]
