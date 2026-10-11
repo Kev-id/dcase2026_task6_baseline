@@ -1,0 +1,7 @@
+{
+  "ground_truth": "/home/ma-user/work/dcase2026_task6_baseline/data/castella_test_release.jsonl",
+  "predictions": "/home/ma-user/work/dcase2026_task6_baseline/experiments/b2_castella_finetune_seed2024/submission.jsonl",
+  "ground_truth_queries": 1347,
+  "prediction_queries": 1347,
+  "note": "A query can occur in multiple duration bins when its ground-truth windows span multiple bins. Matching follows the official Top-1 rule."
+}
