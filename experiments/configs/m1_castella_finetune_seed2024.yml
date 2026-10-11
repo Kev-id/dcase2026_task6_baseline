@@ -1,0 +1,69 @@
+# M1 target-domain fine-tuning, paired with B2 seed 2024.
+# Initialize with experiments/m1_clotho_duration_tempered/best_checkpoint.pth.
+seed: 2024
+device: 'cuda'
+num_workers: 4
+
+lr: 0.0001
+lr_drop: 400
+wd: 0.0001
+n_epoch: 200
+bsz: 32
+eval_bsz: 100
+grad_clip: 0.1
+max_windows: 5
+clip_length: 1
+eval_epoch_interval: 1
+
+position_embedding: "sine"
+enc_layers: 2
+dec_layers: 2
+dim_feedforward: 1024
+hidden_dim: 256
+input_dropout: 0.5
+dropout: 0.1
+nheads: 8
+num_queries: 10
+
+n_input_proj: 2
+saliency_margin: 0.2
+span_loss_type: "l1"
+set_cost_span: 10
+set_cost_giou: 1
+set_cost_class: 4
+span_loss_coef: 10
+giou_loss_coef: 1
+label_loss_coef: 4
+eos_coef: 0.1
+lw_saliency: 1
+
+ckpt_filename: best_checkpoint.pth
+train_log_filename: train.log
+eval_log_filename: val.log
+eval_split_name: val
+aux_loss: True
+
+model_ema: False
+ema_decay: 0.9
+results_dir: experiments/m1_castella_finetune_seed2024
+
+dset_name: castella
+clip_length: 1
+train_path: data/castella_train_release.jsonl
+val_path: data/castella_val_release.jsonl
+test_path: data/castella_test_release.jsonl
+submission_path: data/dcase2026_evaluation.jsonl
+max_q_l: 32
+max_a_l: 300
+
+ctx_mode: audio_tef
+a_feat_dir: features/castella/clap
+t_feat_dir: features/castella/clap_text
+a_sub_feat_dir: features/dcase2026_evaluation/clap
+t_sub_feat_dir: features/dcase2026_evaluation/clap_text
+a_feat_type: clap
+t_feat_type: clap
+a_feat_dim: 768
+t_feat_dim: 768
+
+model_name: qd_detr
